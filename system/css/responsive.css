@@ -1,0 +1,486 @@
+﻿/* PRINT ##################################################################################### */
+@media print {
+
+body {
+	background: none;
+	background-color: #fff;
+	color: #555;
+}
+
+h1, h2, h3, h4, h5 {
+	color: #777;
+}
+
+}
+
+
+/* Huge SCREEN #################################################################################### */
+@media screen and (min-width: 2001px) {
+
+#portfolio_thumbs li {
+	width: 20%;
+}
+
+#portfolio_thumbs.stay li {
+	width: 25%;
+}
+
+}
+
+
+/* STANDARD VIEW ################################################################################# */
+@media screen and (max-width: 2000px) {
+
+#portfolio_thumbs li {
+	width: 25%;
+}
+
+#portfolio_thumbs.stay li {
+	width: 33.3%;
+}
+
+}
+
+/* STANDARD VIEW ################################################################################# */
+@media screen and (max-width: 1280px) {
+
+#portfolio_thumbs li {
+	width: 33.3%;
+}
+
+#portfolio_thumbs.stay li {
+	width: 50%;
+}
+
+}
+
+
+
+/* IPAD QUER ##################################################################################### */
+@media screen and (max-width: 1024px) {
+
+#agentur h2 {
+	padding-top: 30px;
+}
+
+#agentur .content {
+	margin: 5px 0 0 -80px;
+	width: 48%;
+}
+
+#design .content {
+	width: 480px;
+}
+
+#design-links li {
+	width: 150px;
+}
+
+#kunden .content {
+	padding-right: 70px;
+	width: 420px;
+}
+
+#chem-1 {margin: 0 400px 0 0;}
+#chem-2 {margin: 0 250px 0 0;}
+#chem-3 {margin: 0 210px 0 0;}
+#chem-4 {margin: 0 110px 0 0;}
+#chem-5 {margin: 0 0 0 0;}
+
+#kontakt .content {
+	width: 450px;
+}
+
+}
+
+
+
+/* TABLET HOCH ##################################################################################### */
+@media screen and (max-width: 800px) {
+
+#design-examples {
+	display: none !important;
+}
+
+#agentur h1, #agentur h3 {
+	font-size: 16px;
+	margin: 0 0 5px 0;
+}
+
+#agentur h2 span {
+	font-size: 48px;
+	line-height: 48px;
+}
+
+#agentur .content {
+    margin: -15px 0 0 -100px;
+	width: 52%;
+}
+
+#agentur-links h4 {
+	display: none;
+}
+
+#agentur-links ul {
+	margin: 20px 0 0 -80px;
+	width: 400px;
+}
+
+#agentur-links li.herz {
+	margin: -5px 0 0 0;
+}
+
+#agentur-links li.hirn {
+	margin: 5px 0 0 -25px;
+}
+
+#agentur-links li.bauch {
+	margin: 8px 0 0 -50px;
+}
+
+#design .content {
+	width: 420px;
+}
+
+#design-links li {
+	width: 130px;
+}
+
+
+#kunden h2 span {
+	font-size: 48px;
+	line-height: 48px;
+	text-align: left;
+}
+
+.chem {
+	display: none;
+}
+
+#kontakt .content {
+	width: 350px;
+}
+
+#kontakt-form input[type=text] {
+	background-color: #fff;
+}
+
+#kontakt-form textarea {
+	background-color: #fff;
+}
+
+
+
+/* Bereich: FOOTER */
+
+#footerbox2 {
+	display: none;
+}
+
+.footerbox {
+	width: 45%;
+}
+
+#charity ul li {
+	width: 19%;
+}
+
+
+#left-door, #right-door {
+	left: 0 !important;
+	margin:  0;
+	position: fixed;
+	right: 0 !important;
+	-webkit-transition: all 0.5s ease-in-out 0s;
+	-moz-transition: all 0.5s ease-in-out 0s;
+	-ms-transition: all 0.5s ease-in-out 0s;
+	-o-transition: all 0.5s ease-in-out 0s;
+	transition: all 0.5s ease-in-out 0s;
+	width: 100%;
+	z-index: -1;
+}
+
+#left-door {
+	border: 0;
+	border-bottom: 1px solid #444;
+	display: table;
+	height: 45vh;
+	top: -45vh;
+}
+
+#left-door.in {
+	top: 0;
+}
+
+#left-door.stay {
+	left: 0 !important;
+	top: -45vh !important;
+}
+
+#right-door {
+	height: 55vh;
+	top: 100vh;
+}
+
+#right-door.in {
+	top: 45vh;
+}
+
+#portfolio_thumbs.stay {
+	width: 100%;
+}
+
+#portfolio_thumbs.stay li {
+	width: 33.3%;
+}
+
+.reference {
+    padding: 25px 5% 0 5%;
+}
+
+.reference .reflogo {
+    max-height: 80px;
+    max-width: 200px;
+	padding-bottom: 15px;
+}
+
+.reference .online {
+    float: right;
+}
+
+}
+
+
+/* SMARTPHONE ##################################################################################### */
+@media screen and (max-width: 570px) {
+
+/* Hide */
+
+#nav,
+.downlink,
+#werbung h3,
+#agentur .anibox .device,
+#agentur #xray,
+#agentur-links,
+#design-links,
+#design .content .togglebox-hinweis,
+.testimonial p.quote-start,
+.testimonial p.quote-end,
+#spiel,
+#cube,
+#footerbox1,
+#charity {
+	display: none !important;
+}
+
+#home {
+	left: 20px;
+}
+
+.intro-link a {
+    font-size: 52px;
+    height: 39px;
+    line-height: 38px;
+}
+
+#intro1 {top: 0;}
+#intro2 {top: 37px;}
+#intro3 {top: 74px;}
+#intro4 {top: 111px;}
+#intro5 {top: 148px;}
+
+#bdg-ihk {
+	bottom: 50px;
+}
+
+#bdg-ihk ul.menu li {
+	margin: 0 1px;
+}
+
+#bdg-ihk img {
+	height: 40px;
+	width: auto;
+}
+
+.holder {
+	padding: 0 10px;
+}
+
+
+#werbung h2 span {
+	font-size: 24px;
+	line-height: 24px;
+	text-align: left;
+}
+
+#heaven .content {
+	height: 280px;
+}
+
+#heaven .content, #hell .content {
+	bottom: 0;
+	color: #555;
+	left: 0;
+	padding: 0 10px;
+	width: auto;
+}
+
+.werbung-link {
+	display: none;
+}
+
+
+#werbung .content .werbung-link p {
+	display: block;
+}
+
+#agentur .content {
+	left: auto;
+	margin: 0;
+	padding: 0;
+	position: relative;
+	right: auto;
+	top: 0;
+	width: 100%;
+}
+
+#agentur h1 {
+	font-size: 14px;
+	letter-spacing: 1px;
+	line-height: 26px;
+	text-align: left;
+}
+
+#agentur h2 {
+	font-size: 16px;
+	padding-top: 0;
+	text-align: left;
+}
+
+#agentur h2 span {
+	font-size: 42px;
+	line-height: 42px;
+	text-align: left;
+}
+
+
+#werbeagentur h2 span {
+	font-size: 48px;
+	line-height: 48px;
+}
+
+.stats {
+	width: 23%;
+}
+
+.stats.last {
+	display: inline;
+}
+
+.stats p {
+	font-size: 10px;
+	padding: 5px 0;
+}
+
+.stats span {
+	font-size: 22px;
+}
+
+
+#design h2 span {
+	font-size: 40px;
+	line-height: 40px;
+	text-align: left;
+}
+
+#design .content {
+	width: 100%;
+}
+
+#kunden h2 {
+	color: #fff;
+	font-size: 16px;
+	text-align: left;
+}
+
+#kunden h3 {
+	letter-spacing: 0;
+}
+
+#kunden h2 span {
+	font-size: 36px;
+	line-height: 36px;
+	text-align: left;
+}
+
+#kunden .content {
+	padding: 0;
+	width: 100%;
+}
+
+#kunden .content img {
+	height: auto;
+	width: 100%;
+}
+
+
+
+#portfolio_thumbs li {
+	width: 100%;
+}
+
+.doors.in .left-door {
+	bottom: 0;
+	height: 50%;
+	width: 100%;
+}
+
+.doors.in .right-door {
+	height: 50%;
+	top: 0;
+	width: 100%;
+}
+
+.reference p.client-name, .reference p.anschrift,
+.reference .leistung, .reference .ref-nav {
+	display: none !important;
+}
+
+.reference {
+	padding: 20px 15px 0 15px;
+}
+
+.testimonial p.quote-text {
+	font-size: 16px;
+	padding: 0 10px;
+	width: auto;
+}
+
+#testimonials-nav {
+	margin: 130px auto 0;
+}
+
+#kontakt h2 {
+	font-size: 18px;
+	text-align: left;
+}
+
+#kontakt h2 span {
+	font-size: 36px;
+	line-height: 36px;
+	text-align: left;
+}
+
+#kontakt .content {
+	width: 100%;
+}
+
+#footerbox3 {
+    margin: 0 5%;
+}
+
+.footerbox {
+    width: 90%;
+}
+
+}

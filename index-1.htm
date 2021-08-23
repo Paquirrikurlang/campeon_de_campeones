@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8" />
+	<meta http-equiv="Default-Style" content="text/css" />
+	
+	<script type="text/javascript" src="js/jquery.min.js"></script>
+	<script type="text/javascript" src="js/jquery-ui.min.js"></script>
+	<script type="text/javascript" src="js/jquery.tablesorter.min.js"></script>
+	<script type="text/javascript" src="js/plugins/jquery.tablesorter.sizeparser.min.js"></script>
+	<!--[if lt IE 9]><script type="text/javascript" src="js/html5shiv.min.js"></script><![endif]-->
+	
+	<script type="text/javascript" src="templates/Sparkle/assets/js/tipper.min.js"></script>
+	<script type="text/javascript" src="templates/Sparkle/assets/js/jcanvas.min.js"></script>
+	<script type="text/javascript" src="templates/Sparkle/assets/js/circular.js"></script>
+	<script type="text/javascript" src="templates/Sparkle/assets/js/autosize.min.js"></script>
+	<link href="templates/Sparkle/assets/css/main.css" rel="stylesheet" type="text/css" />
+<link href="templates/Sparkle/assets/css/mhost/mhost.css" rel="stylesheet" type="text/css" />
+
+	<!--[if IE]><link rel="stylesheet" href="templates/Sparkle/assets/css/main_ie.css" type="text/css" /><![endif]-->
+	<link href="css/jquery-ui.min.css" rel="stylesheet" type="text/css"/>
+	<script type="text/javascript" src="templates/Sparkle/assets/js/main.js"></script>
+<script type="text/javascript" src="templates/Sparkle/assets/js/apikey.js"></script>
+
+	<link href="templates/Sparkle/assets/img/favicon.ico" rel="icon" type="image/x-icon" />
+	<link href="templates/Sparkle/assets/img/touchicon.png" rel="shortcut" />
+	<link href="templates/Sparkle/assets/img/touchicon.png" rel="apple-touch-icon" />
+	<title>Froxlor Server Management Panel</title>
+</head>
+<body>
+
+
+
+	<article class="login bradius">
+		<header class="dark">
+			<img src="templates/Sparkle/assets/img/logo.png" alt="Froxlor Server Management Panel" />
+		</header>
+
+		
+
+		
+
+		
+
+		<section class="loginsec">
+			<form method="post" action="index.php" enctype="application/x-www-form-urlencoded">
+				<input type="hidden" name="script" value="" />
+				<input type="hidden" name="qrystr" value="" />
+				<fieldset>
+				<legend>Froxlor&nbsp;-&nbsp;Login</legend>
+				<p>
+					<label for="loginname">Benutzername:</label>&nbsp;
+					<input type="text" name="loginname" id="loginname" value="" required/>
+				</p>
+				<p>
+					<label for="password">Passwort:</label>&nbsp;
+					<input type="password" name="password" id="password" required/>
+				</p>
+				<p>
+					<label for="language">Sprache:</label>&nbsp;
+					<select name="language" id="language"><option value="profile"  selected="selected" >Profilsprache</option><option value="Deutsch"   >Deutsch</option><option value="English"   >English</option><option value="Fran&amp;ccedil;ais"   >Fran&ccedil;ais</option><option value="Chinese"   >Chinese</option><option value="Catalan"   >Catalan</option><option value="Espa&amp;ntilde;ol"   >Espa&ntilde;ol</option><option value="Portugu&amp;ecirc;s"   >Portugu&ecirc;s</option><option value="Russian"   >Russian</option><option value="Danish"   >Danish</option><option value="Italian"   >Italian</option><option value="Bulgarian"   >Bulgarian</option><option value="Slovak"   >Slovak</option><option value="Dutch"   >Dutch</option><option value="Hungarian"   >Hungarian</option><option value="Swedish"   >Swedish</option><option value="Czech"   >Czech</option><option value="Polski"   >Polski</option></select>
+				</p>
+				<p class="submit">
+					<input type="hidden" name="send" value="send" />
+					<input type="submit" value="Anmelden" />
+				</p>
+				</fieldset>
+			</form>
+
+			<aside>
+				
+					<a href="index.php?action=forgotpwd">Passwort vergessen?</a>
+				
+			</aside>
+
+		</section>
+
+	</article>
+
+<footer>
+	<span><img src="templates/Sparkle/assets/img/logo_grey.png" alt="Froxlor" /> 
+		
+		&copy; 2009-2021 by <a href="http://www.froxlor.org/" rel="external">the Froxlor Team</a><br />
+	</span>
+	
+</footer>
+<a href="#" class="scrollup">Scroll</a>
+</body>
+</html>
+

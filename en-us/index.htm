@@ -1,0 +1,1391 @@
+<!doctype html>
+<html lang="en-gb">
+    <head >
+        <script>
+    var BASE_URL = 'https://www.rubiks.com/en-us/';
+    var require = {
+        "baseUrl": "https://www.rubiks.com/static/version1607342405/frontend/Bestresponse/rubiks/en_GB"
+    };
+</script>
+        <script id="hiconversion_head_always" type="text/javascript">
+    var __hic = __hic || {};
+    (function(){
+        try {
+            __hic.version = "1.3.6";
+            __hic.data = __hic.data || {};
+            __hic.data.platform = "magento2";
+            __hic.data.platformVersion = "2.3.3";
+            __hic.data.platformEdition = "Community";
+            __hic.data.pid = "QXnwrBvw";
+            __hic.data.bncode = "";
+            
+            var script = document.createElement("script");
+            script.id = "hiconversion_30";
+            script.async = "async";
+            script.type = "text/javascript";
+            script.src = "//h30-deploy.hiconversion.com/origin/tag/QXnwrBvw";
+            var nodes = document.getElementsByTagName("script");
+            if (nodes.length > 0) {
+                nodes[0].parentNode.insertBefore(script, nodes[0]);
+            }
+        } catch (e) {
+        }
+    })();
+</script>
+
+    
+<script id="hiconversion_head_page" type="text/javascript">
+     var __hic = __hic || {};
+    (function(){
+        try {
+                        __hic.data = __hic.data || {};
+                            __hic.data.page = {"route":"cms_index_index","bc":[]};
+                                                    } catch (e) {
+        }
+    })();
+</script>
+                    <meta charset="utf-8"/><script type="text/javascript">(window.NREUM||(NREUM={})).loader_config={licenseKey:"696e8ca155",applicationID:"251331098"};window.NREUM||(NREUM={}),__nr_require=function(t,e,n){function r(n){if(!e[n]){var i=e[n]={exports:{}};t[n][0].call(i.exports,function(e){var i=t[n][1][e];return r(i||e)},i,i.exports)}return e[n].exports}if("function"==typeof __nr_require)return __nr_require;for(var i=0;i<n.length;i++)r(n[i]);return r}({1:[function(t,e,n){function r(){}function i(t,e,n){return function(){return o(t,[u.now()].concat(f(arguments)),e?null:this,n),e?void 0:this}}var o=t("handle"),a=t(8),f=t(9),c=t("ee").get("tracer"),u=t("loader"),s=NREUM;"undefined"==typeof window.newrelic&&(newrelic=s);var d=["setPageViewName","setCustomAttribute","setErrorHandler","finished","addToTrace","inlineHit","addRelease"],p="api-",l=p+"ixn-";a(d,function(t,e){s[e]=i(p+e,!0,"api")}),s.addPageAction=i(p+"addPageAction",!0),s.setCurrentRouteName=i(p+"routeName",!0),e.exports=newrelic,s.interaction=function(){return(new r).get()};var m=r.prototype={createTracer:function(t,e){var n={},r=this,i="function"==typeof e;return o(l+"tracer",[u.now(),t,n],r),function(){if(c.emit((i?"":"no-")+"fn-start",[u.now(),r,i],n),i)try{return e.apply(this,arguments)}catch(t){throw c.emit("fn-err",[arguments,this,t],n),t}finally{c.emit("fn-end",[u.now()],n)}}}};a("actionText,setName,setAttribute,save,ignore,onEnd,getContext,end,get".split(","),function(t,e){m[e]=i(l+e)}),newrelic.noticeError=function(t,e){"string"==typeof t&&(t=new Error(t)),o("err",[t,u.now(),!1,e])}},{}],2:[function(t,e,n){function r(t){if(NREUM.init){for(var e=NREUM.init,n=t.split("."),r=0;r<n.length-1;r++)if(e=e[n[r]],"object"!=typeof e)return;return e=e[n[n.length-1]]}}e.exports={getConfiguration:r}},{}],3:[function(t,e,n){function r(){return f.exists&&performance.now?Math.round(performance.now()):(o=Math.max((new Date).getTime(),o))-a}function i(){return o}var o=(new Date).getTime(),a=o,f=t(10);e.exports=r,e.exports.offset=a,e.exports.getLastTimestamp=i},{}],4:[function(t,e,n){function r(t){return!(!t||!t.protocol||"file:"===t.protocol)}e.exports=r},{}],5:[function(t,e,n){function r(t,e){var n=t.getEntries();n.forEach(function(t){"first-paint"===t.name?d("timing",["fp",Math.floor(t.startTime)]):"first-contentful-paint"===t.name&&d("timing",["fcp",Math.floor(t.startTime)])})}function i(t,e){var n=t.getEntries();n.length>0&&d("lcp",[n[n.length-1]])}function o(t){t.getEntries().forEach(function(t){t.hadRecentInput||d("cls",[t])})}function a(t){if(t instanceof m&&!g){var e=Math.round(t.timeStamp),n={type:t.type};e<=p.now()?n.fid=p.now()-e:e>p.offset&&e<=Date.now()?(e-=p.offset,n.fid=p.now()-e):e=p.now(),g=!0,d("timing",["fi",e,n])}}function f(t){"hidden"===t&&d("pageHide",[p.now()])}if(!("init"in NREUM&&"page_view_timing"in NREUM.init&&"enabled"in NREUM.init.page_view_timing&&NREUM.init.page_view_timing.enabled===!1)){var c,u,s,d=t("handle"),p=t("loader"),l=t(7),m=NREUM.o.EV;if("PerformanceObserver"in window&&"function"==typeof window.PerformanceObserver){c=new PerformanceObserver(r);try{c.observe({entryTypes:["paint"]})}catch(v){}u=new PerformanceObserver(i);try{u.observe({entryTypes:["largest-contentful-paint"]})}catch(v){}s=new PerformanceObserver(o);try{s.observe({type:"layout-shift",buffered:!0})}catch(v){}}if("addEventListener"in document){var g=!1,h=["click","keydown","mousedown","pointerdown","touchstart"];h.forEach(function(t){document.addEventListener(t,a,!1)})}l(f)}},{}],6:[function(t,e,n){function r(t,e){if(!i)return!1;if(t!==i)return!1;if(!e)return!0;if(!o)return!1;for(var n=o.split("."),r=e.split("."),a=0;a<r.length;a++)if(r[a]!==n[a])return!1;return!0}var i=null,o=null,a=/Version\/(\S+)\s+Safari/;if(navigator.userAgent){var f=navigator.userAgent,c=f.match(a);c&&f.indexOf("Chrome")===-1&&f.indexOf("Chromium")===-1&&(i="Safari",o=c[1])}e.exports={agent:i,version:o,match:r}},{}],7:[function(t,e,n){function r(t){function e(){t(a&&document[a]?document[a]:document[i]?"hidden":"visible")}"addEventListener"in document&&o&&document.addEventListener(o,e,!1)}e.exports=r;var i,o,a;"undefined"!=typeof document.hidden?(i="hidden",o="visibilitychange",a="visibilityState"):"undefined"!=typeof document.msHidden?(i="msHidden",o="msvisibilitychange"):"undefined"!=typeof document.webkitHidden&&(i="webkitHidden",o="webkitvisibilitychange",a="webkitVisibilityState")},{}],8:[function(t,e,n){function r(t,e){var n=[],r="",o=0;for(r in t)i.call(t,r)&&(n[o]=e(r,t[r]),o+=1);return n}var i=Object.prototype.hasOwnProperty;e.exports=r},{}],9:[function(t,e,n){function r(t,e,n){e||(e=0),"undefined"==typeof n&&(n=t?t.length:0);for(var r=-1,i=n-e||0,o=Array(i<0?0:i);++r<i;)o[r]=t[e+r];return o}e.exports=r},{}],10:[function(t,e,n){e.exports={exists:"undefined"!=typeof window.performance&&window.performance.timing&&"undefined"!=typeof window.performance.timing.navigationStart}},{}],ee:[function(t,e,n){function r(){}function i(t){function e(t){return t&&t instanceof r?t:t?u(t,c,a):a()}function n(n,r,i,o,a){if(a!==!1&&(a=!0),!l.aborted||o){t&&a&&t(n,r,i);for(var f=e(i),c=v(n),u=c.length,s=0;s<u;s++)c[s].apply(f,r);var p=d[w[n]];return p&&p.push([b,n,r,f]),f}}function o(t,e){y[t]=v(t).concat(e)}function m(t,e){var n=y[t];if(n)for(var r=0;r<n.length;r++)n[r]===e&&n.splice(r,1)}function v(t){return y[t]||[]}function g(t){return p[t]=p[t]||i(n)}function h(t,e){l.aborted||s(t,function(t,n){e=e||"feature",w[n]=e,e in d||(d[e]=[])})}var y={},w={},b={on:o,addEventListener:o,removeEventListener:m,emit:n,get:g,listeners:v,context:e,buffer:h,abort:f,aborted:!1};return b}function o(t){return u(t,c,a)}function a(){return new r}function f(){(d.api||d.feature)&&(l.aborted=!0,d=l.backlog={})}var c="nr@context",u=t("gos"),s=t(8),d={},p={},l=e.exports=i();e.exports.getOrSetContext=o,l.backlog=d},{}],gos:[function(t,e,n){function r(t,e,n){if(i.call(t,e))return t[e];var r=n();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(t,e,{value:r,writable:!0,enumerable:!1}),r}catch(o){}return t[e]=r,r}var i=Object.prototype.hasOwnProperty;e.exports=r},{}],handle:[function(t,e,n){function r(t,e,n,r){i.buffer([t],r),i.emit(t,e,n)}var i=t("ee").get("handle");e.exports=r,r.ee=i},{}],id:[function(t,e,n){function r(t){var e=typeof t;return!t||"object"!==e&&"function"!==e?-1:t===window?0:a(t,o,function(){return i++})}var i=1,o="nr@id",a=t("gos");e.exports=r},{}],loader:[function(t,e,n){function r(){if(!R++){var t=M.info=NREUM.info,e=v.getElementsByTagName("script")[0];if(setTimeout(u.abort,3e4),!(t&&t.licenseKey&&t.applicationID&&e))return u.abort();c(E,function(e,n){t[e]||(t[e]=n)});var n=a();f("mark",["onload",n+M.offset],null,"api"),f("timing",["load",n]);var r=v.createElement("script");0===t.agent.indexOf("http://")||0===t.agent.indexOf("https://")?r.src=t.agent:r.src=l+"://"+t.agent,e.parentNode.insertBefore(r,e)}}function i(){"complete"===v.readyState&&o()}function o(){f("mark",["domContent",a()+M.offset],null,"api")}var a=t(3),f=t("handle"),c=t(8),u=t("ee"),s=t(6),d=t(4),p=t(2),l=p.getConfiguration("ssl")===!1?"http":"https",m=window,v=m.document,g="addEventListener",h="attachEvent",y=m.XMLHttpRequest,w=y&&y.prototype,b=!d(m.location);NREUM.o={ST:setTimeout,SI:m.setImmediate,CT:clearTimeout,XHR:y,REQ:m.Request,EV:m.Event,PR:m.Promise,MO:m.MutationObserver};var x=""+location,E={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net",agent:"js-agent.newrelic.com/nr-1210.min.js"},O=y&&w&&w[g]&&!/CriOS/.test(navigator.userAgent),M=e.exports={offset:a.getLastTimestamp(),now:a,origin:x,features:{},xhrWrappable:O,userAgent:s,disabled:b};if(!b){t(1),t(5),v[g]?(v[g]("DOMContentLoaded",o,!1),m[g]("load",r,!1)):(v[h]("onreadystatechange",i),m[h]("onload",r)),f("mark",["firstbyte",a.getLastTimestamp()],null,"api");var R=0}},{}],"wrap-function":[function(t,e,n){function r(t,e){function n(e,n,r,c,u){function nrWrapper(){var o,a,s,p;try{a=this,o=d(arguments),s="function"==typeof r?r(o,a):r||{}}catch(l){i([l,"",[o,a,c],s],t)}f(n+"start",[o,a,c],s,u);try{return p=e.apply(a,o)}catch(m){throw f(n+"err",[o,a,m],s,u),m}finally{f(n+"end",[o,a,p],s,u)}}return a(e)?e:(n||(n=""),nrWrapper[p]=e,o(e,nrWrapper,t),nrWrapper)}function r(t,e,r,i,o){r||(r="");var f,c,u,s="-"===r.charAt(0);for(u=0;u<e.length;u++)c=e[u],f=t[c],a(f)||(t[c]=n(f,s?c+r:r,i,c,o))}function f(n,r,o,a){if(!m||e){var f=m;m=!0;try{t.emit(n,r,o,e,a)}catch(c){i([c,n,r,o],t)}m=f}}return t||(t=s),n.inPlace=r,n.flag=p,n}function i(t,e){e||(e=s);try{e.emit("internal-error",t)}catch(n){}}function o(t,e,n){if(Object.defineProperty&&Object.keys)try{var r=Object.keys(t);return r.forEach(function(n){Object.defineProperty(e,n,{get:function(){return t[n]},set:function(e){return t[n]=e,e}})}),e}catch(o){i([o],n)}for(var a in t)l.call(t,a)&&(e[a]=t[a]);return e}function a(t){return!(t&&t instanceof Function&&t.apply&&!t[p])}function f(t,e){var n=e(t);return n[p]=t,o(t,n,s),n}function c(t,e,n){var r=t[e];t[e]=f(r,n)}function u(){for(var t=arguments.length,e=new Array(t),n=0;n<t;++n)e[n]=arguments[n];return e}var s=t("ee"),d=t(9),p="nr@original",l=Object.prototype.hasOwnProperty,m=!1;e.exports=r,e.exports.wrapFunction=f,e.exports.wrapInPlace=c,e.exports.argsToArray=u},{}]},{},["loader"]);</script>
+<meta name="title" content="Rubik&#039;s America | Cubes, Puzzles, How-to-Guides &amp; More | Rubik&#039;s Official Website"/>
+<meta name="description" content="The official home of the iconic Rubik&#039;s cubes and puzzles. "/>
+<meta name="robots" content="INDEX,FOLLOW"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<meta name="format-detection" content="telephone=no"/>
+<title>Rubik&#039;s America | Cubes, Puzzles, How-to-Guides &amp; More | Rubik&#039;s Official Website</title>
+<link  rel="stylesheet" type="text/css"  media="all" href="https://www.rubiks.com/static/version1607342405/_cache/merged/b28acbd3bc28761dd219587b53d54c49.css" />
+<link  rel="stylesheet" type="text/css"  media="all and (min-width: 1px)" href="https://www.rubiks.com/static/version1607342405/frontend/Bestresponse/rubiks/en_GB/css/styles.min.css" />
+<script  type="text/javascript"  src="https://www.rubiks.com/static/version1607342405/frontend/Bestresponse/rubiks/en_GB/requirejs/require.js"></script>
+<script  type="text/javascript"  src="https://www.rubiks.com/static/version1607342405/frontend/Bestresponse/rubiks/en_GB/mage/requirejs/mixins.js"></script>
+<script  type="text/javascript"  src="https://www.rubiks.com/static/version1607342405/frontend/Bestresponse/rubiks/en_GB/requirejs-config.js"></script>
+<script  type="text/javascript"  src="https://www.rubiks.com/static/version1607342405/frontend/Bestresponse/rubiks/en_GB/mage/polyfill.js"></script>
+<link  rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Rubik:300,400,500,700,900" />
+<link  rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Rubik+Mono+One" />
+<link  rel="icon" type="image/x-icon" href="https://www.rubiks.com/media/favicon/stores/8/icons8-rubik_s-cube-48.png" />
+<link  rel="shortcut icon" type="image/x-icon" href="https://www.rubiks.com/media/favicon/stores/8/icons8-rubik_s-cube-48.png" />
+<link  rel="stylesheet" type="text/css"  media="all" href="{{MEDIA_URL}}styles.css" />
+<style>
+.util--color-gold {
+color: rgba(255, 215, 0, 0) !important;
+}
+.util--color-gold50 {
+color: rgba(255, 215, 0, 50) !important;
+}
+.util--color-gold20 {
+color: rgba(255, 215, 0, 50) !important;
+}
+.util--bg-gold {
+background-color: rgba(255, 215, 0, 0) !important;
+}
+.util--bg-gold50 {
+background-color: rgba(255, 215, 50, 0) !important;
+}
+.util--bg-gold20 {
+background-color: rgba(255, 215, 20, 0) !important;
+}
+</style>
+<style xml="space"><!--
+.pos-bottom-center{
+position: absolute;
+left: 50%;
+bottom: 10px;
+transform: translateX(-50%);
+}
+.pos-center {
+position: absolute;
+top: 50%;
+left: 50%;
+transform: translateX(-50%) translateY(-50%);
+}
+.pos-left-center {
+position: absolute;
+left: 20px;
+top: 50%;
+transform: translateY(-50%);
+}
+.pos-bottom-right {
+position: absolute;
+right: 10px;
+bottom: 10px;
+}
+.pos-bottom-left {
+position: absolute;
+left: 10px;
+bottom: 10px;
+}
+.pos-offset-top-100 {
+margin-top: 100px;
+}
+.pos-offset-bottom-120 {
+margin-bottom: 120px !important;
+}
+.pos-offset-bottom-100 {
+margin-bottom: 100px !important;
+}
+.pos-offset-bottom-80 {
+margin-bottom: 80px !important;
+}
+.pos-offset-bottom-40 {
+margin-bottom: 40px !important;
+}
+.cta-action {
+background:#003DA5;
+border-radius: 9px;
+color: #FFF;
+line-height: 60px;
+height: 60px;
+padding: 0 10px;
+font-weight: bold;
+width: 100%;
+max-width: 220px;
+text-transform: uppercase;
+display: inline-block;
+}
+.cta-action:hover {
+color: #000;
+}
+
+@media only screen and (max-width: 992px) {
+.cms-index-index .bluefoot-structural .block-column .block-wrap {
+background-position: center;
+}
+
+@media only screen and (min-width: 1024px) {
+.hidden-desktop {
+display: none !important;
+}
+}
+
+.header-top-message {
+display: block;
+font-size: 13px;
+}
+
+.step .number .wrap {
+box-shadow: none;
+border: none;
+float: left;
+padding: 0;
+}
+
+.step .number span {
+display: inline;
+}
+
+.step .number span:last-child {
+font-size: 15px;
+}
+}
+
+
+--></style>        <!-- BEGIN GOOGLE VERIFICATION TAG -->
+<!-- END GOOGLE VERIFICATION TAG -->
+<!-- BEGIN GTAG GLOBAL TAG -->
+<!-- END GTAG GLOBAL TAG -->
+            <!-- GOOGLE TAG MANAGER -->
+            <script type="text/x-magento-init">
+            {
+                "*": {
+                    "Magento_GoogleTagManager/js/google-tag-manager": {
+                        "isCookieRestrictionModeEnabled": 0,
+                        "currentWebsite": 3,
+                        "cookieName": "user_allowed_save_cookie",
+                        "gtmAccountId": "GTM\u002DWQ9LGKQ",
+                        "storeCurrencyCode": "USD",
+                        "ordersData": []                    }
+                }
+            }
+            </script>
+            <!-- END GOOGLE TAG MANAGER -->
+            <meta name="twitter:title" content="Rubik's America | Cubes, Puzzles, How-to-Guides &amp; More" />
+<meta name="twitter:description" content="EXPLORE.background-image-6123bf3ca9b68 {background-image: url(https://www.rubiks.com/media/wysiwyg/NeverGiveUpDay_WebsiteBanner_Desktop_1916x707.jpg);}@media only screen and (max-width: 768px) {.b ..." />
+<meta name="twitter:url" content="https://www.rubiks.com/en-us/north-america-home/" />
+<meta name="twitter:card" content="summary" />
+<meta property="og:title" content="Rubik's America | Cubes, Puzzles, How-to-Guides &amp; More" />
+<meta property="og:description" content="EXPLORE.background-image-6123bf3cb0758 {background-image: url(https://www.rubiks.com/media/wysiwyg/NeverGiveUpDay_WebsiteBanner_Desktop_1916x707.jpg);}@media only screen and (max-width: 768px) {.b ..." />
+<meta property="og:url" content="https://www.rubiks.com/en-us/north-america-home/" />
+    <link rel="alternate" hreflang="x-default" href="https://www.rubiks.com/en-us/" />
+    <link rel="alternate" hreflang="fr-fr" href="https://www.rubiks.com/fr-fr/" />
+    <link rel="alternate" hreflang="en-us" href="https://www.rubiks.com/en-us/" />
+    <link rel="alternate" hreflang="en-eu" href="https://www.rubiks.com/en-eu/" />
+        </head>
+    <body data-container="body"
+          data-mage-init='{"loaderAjax": {}, "loader": { "icon": "https://www.rubiks.com/static/version1607342405/frontend/Bestresponse/rubiks/en_GB/images/loader-2.gif"}}'
+        class="usa cms-north-america-home cms-index-index page-layout-1column">
+        <script>
+    require.config({
+        map: {
+            '*': {
+                wysiwygAdapter: 'mage/adminhtml/wysiwyg/tiny_mce/tinymce4Adapter'
+            }
+        }
+    });
+</script>
+
+<script type="text/x-magento-init">
+    {
+        "*": {
+            "Magento_PageBuilder/js/widget-initializer": {
+                "config": {"[data-content-type=\"slider\"][data-appearance=\"default\"]":{"Magento_PageBuilder\/js\/content-type\/slider\/appearance\/default\/widget":"{}"},"[data-content-type=\"map\"]":{"Magento_PageBuilder\/js\/content-type\/map\/appearance\/default\/widget":"{}"},"[data-content-type=\"row\"]":{"Magento_PageBuilder\/js\/content-type\/row\/appearance\/default\/widget":"{}"},"[data-content-type=\"tabs\"]":{"Magento_PageBuilder\/js\/content-type\/tabs\/appearance\/default\/widget":"{}"},"[data-content-type=\"slide\"]":{"Magento_PageBuilder\/js\/widget\/show-on-hover":{"buttonSelector":".pagebuilder-slide-button","showOverlay":"hover","dataRole":"slide"}},"[data-content-type=\"banner\"]":{"Magento_PageBuilder\/js\/widget\/show-on-hover":{"buttonSelector":".pagebuilder-banner-button","showOverlay":"hover","dataRole":"banner"}},"[data-content-type=\"buttons\"]":{"Magento_PageBuilder\/js\/content-type\/buttons\/appearance\/inline\/widget":"{}"}}            }
+        }
+    }
+</script>
+    <script>
+        require.config({
+            deps: [
+                'jquery',
+                'mage/translate',
+                'jquery/jquery-storageapi'
+            ],
+            callback: function ($) {
+                'use strict';
+
+                var dependencies = [],
+                    versionObj;
+
+                $.initNamespaceStorage('mage-translation-storage');
+                $.initNamespaceStorage('mage-translation-file-version');
+                versionObj = $.localStorage.get('mage-translation-file-version');
+
+                
+                if (versionObj.version !== '197b3c5421d80186409819b005fd4f33b3ff26bd') {
+                    dependencies.push(
+                        'text!js-translation.json'
+                    );
+
+                }
+
+                require.config({
+                    deps: dependencies,
+                    callback: function (string) {
+                        if (typeof string === 'string') {
+                            $.mage.translate.add(JSON.parse(string));
+                            $.localStorage.set('mage-translation-storage', string);
+                            $.localStorage.set(
+                                'mage-translation-file-version',
+                                {
+                                    version: '197b3c5421d80186409819b005fd4f33b3ff26bd'
+                                }
+                            );
+                        } else {
+                            $.mage.translate.add($.localStorage.get('mage-translation-storage'));
+                        }
+                    }
+                });
+            }
+        });
+    </script>
+
+<script type="text/x-magento-init">
+    {
+        "*": {
+            "mage/cookies": {
+                "expires": null,
+                "path": "\u002Fen\u002Dus",
+                "domain": ".www.rubiks.com",
+                "secure": false,
+                "lifetime": "3600"
+            }
+        }
+    }
+</script>
+    <noscript>
+        <div class="message global noscript">
+            <div class="content">
+                <p>
+                    <strong>JavaScript seems to be disabled in your browser.</strong>
+                    <span>For the best experience on our site, be sure to turn on Javascript in your browser.</span>
+                </p>
+            </div>
+        </div>
+    </noscript>
+<!-- BEGIN GTAG CART SCRIPT -->
+<!-- END GTAG CART SCRIPT -->
+<script>
+    require.config({
+        paths: {
+            googleMaps: 'https\u003A\u002F\u002Fmaps.googleapis.com\u002Fmaps\u002Fapi\u002Fjs\u003Fv\u003D3\u0026key\u003D'
+        },
+        config: {
+            'Magento_PageBuilder/js/utils/map': {
+                style: ''
+            },
+            'Magento_PageBuilder/js/content-type/map/preview': {
+                apiKey: '',
+                apiKeyErrorMessage: 'You\u0020must\u0020provide\u0020a\u0020valid\u0020\u003Ca\u0020href\u003D\u0027https\u003A\u002F\u002Fwww.rubiks.com\u002Fen\u002Dus\u002Fadminhtml\u002Fsystem_config\u002Fedit\u002Fsection\u002Fcms\u002F\u0023cms_pagebuilder\u0027\u0020target\u003D\u0027_blank\u0027\u003EGoogle\u0020Maps\u0020API\u0020key\u003C\u002Fa\u003E\u0020to\u0020use\u0020a\u0020map.'
+            },
+            'Magento_PageBuilder/js/form/element/map': {
+                apiKey: '',
+                apiKeyErrorMessage: 'You\u0020must\u0020provide\u0020a\u0020valid\u0020\u003Ca\u0020href\u003D\u0027https\u003A\u002F\u002Fwww.rubiks.com\u002Fen\u002Dus\u002Fadminhtml\u002Fsystem_config\u002Fedit\u002Fsection\u002Fcms\u002F\u0023cms_pagebuilder\u0027\u0020target\u003D\u0027_blank\u0027\u003EGoogle\u0020Maps\u0020API\u0020key\u003C\u002Fa\u003E\u0020to\u0020use\u0020a\u0020map.'
+            },
+        }
+    });
+</script>
+
+<script>
+    require.config({
+        shim: {
+            'Magento_PageBuilder/js/utils/map': {
+                deps: ['googleMaps']
+            }
+        }
+    });
+</script>
+    <!-- GOOGLE TAG MANAGER -->
+    <noscript>
+        <iframe src="https://www.googletagmanager.com/ns.html?id=GTM-WQ9LGKQ"
+                height="0" width="0" style="display:none;visibility:hidden"></iframe>
+    </noscript>
+    <!-- END GOOGLE TAG MANAGER -->
+
+<script type="text/x-magento-init">
+    {
+        "*": {
+            "Magento_GoogleTagManager/js/google-tag-manager-cart": {
+                "blockNames": ["category.products.list","product.info.upsell","catalog.product.related","checkout.cart.crosssell","search_result_list"],
+                "cookieAddToCart": "add_to_cart",
+                "cookieRemoveFromCart": "remove_from_cart"
+            }
+        }
+    }
+</script>
+    <div data-role="gdpr-cookie-container" data-bind="scope: 'gdpr-cookie-container'">
+        <!-- ko template: getTemplate() --><!-- /ko -->
+    </div>
+    <script type="text/x-magento-init">
+    {
+        "[data-role=gdpr-cookie-container]": {
+            "Magento_Ui/js/core/app": {
+                "components": {
+                    "gdpr-cookie-container": {
+                        "component": "Amasty_GdprCookie/js/cookies",
+                        "noticeType": 2,
+                        "policyText": "We use cookies to personalise content and ads, to provide social media features and to analyse our traffic. We also share information about your use of our site with our social media, advertising and analytics partners. If you want to know more, please read the\r\n<a href=\"privacy-and-cookie-policy\" target=\"_blank\">Cookie Policy<\/a>",
+                        "allowLink": "https://www.rubiks.com/en-us/gdprcookie/cookie/allow/",
+                        "settingsLink": "https://www.rubiks.com/en-us/cookie-settings/",
+                        "websiteInteraction": "0"
+                    }
+                }
+            }
+        }
+    }
+    </script>
+    <style>
+        .message.global.cookie.am-cookie {
+                    bottom: 0;
+                    z-index: 10;
+            background-color: ;
+        }
+
+        .am-cookie .content p {
+            color: ;
+        }
+
+        .message.global.cookie a, .message.global.cookie a:hover {
+            color: ;
+        }
+
+        .actions button.action.primary.cookiebar {
+            background-color: ;
+            border-color: ;
+            color: ;
+        }
+
+        .actions button.action.primary.cookiebar:hover {
+            opacity: 0.9;
+        }
+        .message.global.cookie.am-cookie {
+            position: fixed;
+            width: 100%;
+            border: none;
+            background-color: #fff;
+            bottom: 0;
+            z-index: 2147483644;
+            min-height: 50px
+        }
+        .message.global.cookie.am-cookie p{
+            width: 70%;
+            float:left;
+            padding: 8px 10px;
+        }
+        .message.global.cookie.am-cookie .actions{
+            width: 30%;
+            float:left;
+            padding: 10px;
+        }
+        .message.global.cookie.am-cookie .actions span{
+            float: left;
+            width: 100%;
+            padding: 10px 10px;
+            text-align: center;
+            white-space: nowrap;
+            text-transform: capitalize;
+            line-height: 20px;
+            color: #003da5;
+            background: #fff;
+            border: 2px solid #003da5;
+            border-radius: 9px;
+        }
+        .message.global.cookie.am-cookie .actions span:hover{
+            background: #003da5;
+            color: #fff;
+        }
+        @media (max-width: 992px) { 
+            .message.global.cookie.am-cookie p {
+                width: 100%;
+            }
+            .message.global.cookie.am-cookie .actions {
+                width: 100%;
+            }
+        }
+    </style>
+
+
+    <script>
+        require.config({
+            paths: {
+                'dmpt':  "//r1-t.trackedlink.net/_dmpt"
+           }
+       });
+    </script>
+    <script type="text/x-magento-init">
+        {
+            "*": {
+                "dmpt": {}
+            }
+        }
+    </script>
+<div class="page-wrapper"><header class="page-header"><div class="header-row"><div class="header"><a class="action skip contentarea"
+   href="#contentarea">
+    <span>
+        Skip to Content    </span>
+</a>
+
+<div class="toggle-nav-wrap">
+    <div id="menu-toggle" data-action="toggle-nav" class="action nav-toggle">
+        <div id="hamburger">
+            <span></span>
+            <span>Toggle Nav</span>
+            <span></span>
+        </div>
+        <div id="cross">
+            <span></span>
+            <span></span>
+        </div>
+    </div>
+</div>
+
+
+<div class="logo">
+    <h1>
+    <a href="https://www.rubiks.com/en-us/" title="">
+        <img src="https://www.rubiks.com/media/logo/websites/3/logo.png"
+             alt=""
+             width="117"             height="42"        />
+    </a>
+    </h1>
+</div><div class="header-controls">
+    <ul class="ul-header-controls">
+        <li class="store">
+                        <span class="open-state"></span>
+                        <div class="form-language">
+                <span class="ico-flagUSA ico ico-header"></span >
+            </div>
+            <div class="content">
+                <h2>Preferences</h2>
+                <p>Select region</p>
+                    <div class="form-language">
+        <select id="select-language" title="Your&#x20;Language"
+                onchange="window.location.href=this.value" class="flags">
+                                                            <option value="https://www.rubiks.com/en-us/?___store=USA&amp;___from_store=USA"
+                        class="flagUSA" selected="selected">
+                    North America                </option>
+                                                            <option value="https://www.rubiks.com/en-uk/?___store=default&amp;___from_store=USA"
+                        class="flagbase">
+                    United Kingdom                </option>
+                                                            <option value="https://www.rubiks.com/fr-fr/?___store=FR&amp;___from_store=USA"
+                        class="flagfrench_website">
+                    France                </option>
+                                                            <option value="https://www.rubiks.com/en-eu/?___store=EU&amp;___from_store=USA"
+                        class="flagEU">
+                     EU/Rest of World                </option>
+                    </select>
+    </div>
+
+                            </div>
+        </li>
+        <li id="header-search-icon" class="remove-htm" data-target="#header-search">
+			<span>
+			</span>
+        </li>
+        <li id="header-account-icon" data-target="#header-links">
+			<span>
+			</span>
+        </li>
+            </ul>
+    </div>
+
+    <div id="header-links" class="header-customer-drop" aria-labelledby="block-customer-login-heading">
+        <div class="wrap">
+            <h2>I am already registered</h2>
+            <form class="form form-login"
+                  action="https://www.rubiks.com/en-us/customer/account/loginPost/referer/aHR0cHM6Ly93d3cucnViaWtzLmNvbS9lbi11cy8%3D/"
+                  method="post"
+                  id="login-form"
+                  data-mage-init='{"validation":{}}'>
+                <input name="form_key" type="hidden" value="bMK14tsxLm4CPukN" />                <fieldset class="fieldset login"
+                          data-hasrequired="&#x2A;&#x20;Required&#x20;Fields">
+                    <div class="field note">
+                        If you have an account, sign in with your email address.                    </div>
+                    <div class="field email required">
+                        <label class="label" for="email">
+                            <span>Email Address</span>
+                        </label>
+                        <div class="control">
+                            <input name="login[username]"
+                                   value=""
+                                   id="email" type="email" class="input-text"
+                                   title="Email&#x20;Address"
+                                   data-validate="{required:true, 'validate-email':true}">
+                        </div>
+                    </div>
+                    <div class="field password required">
+                        <label for="pass"
+                               class="label"><span>Password</span></label>
+                        <div class="control">
+                            <input name="login[password]" type="password" class="input-text" id="pass"
+                                   title="Password"
+                                   data-validate="{required:true}">
+                        </div>
+                    </div>
+                                        <div class="actions-toolbar">
+                        <div class="primary">
+                            <button type="submit" class="action login primary" name="send" id="send2">
+                                <span>Login</span></button>
+                        </div>
+
+                        <div class="secondary">
+                            <a class="action remind"
+                               href="https://www.rubiks.com/en-us/customer/account/forgotpassword/">
+                                <span>Forgotten your password?</span>
+                            </a>
+                        </div>
+
+                    </div>
+                </fieldset>
+            </form>
+
+            <div class="new-customer">
+                <h2>I am new here</h2>
+                <span>Creating an account has many benefits: check out faster,<br>keep more than one address, track orders and a lot more!</span>
+
+                <div class="primary">
+                    <button type="submit" class="action primary"
+                            onclick="location.href='https://www.rubiks.com/en-us/customer/account/create/'">
+                        <span>Register</span>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+<script>
+    require(
+        [
+            'jquery'
+        ],
+        function (
+            $
+        ) {
+            var AjaxUrl = "https://www.rubiks.com/en-us/get/index/fname/";
+            $(document).ready(function () {
+
+                var status ='';
+
+                if (status == 1) {
+
+
+                    $.ajax({
+                        showLoader: false,
+                        url: AjaxUrl,
+                        data: '',
+                        type: "POST"
+                    }).done(function (data) {
+
+                        if (data.status == true) {
+
+                            $('#fname').text(data.firstName);
+
+                        } else {
+
+                            alert('some thing is wrong !!');
+
+                        }
+
+                        return true;
+                    });
+
+                }
+
+
+            });
+
+        }
+    );
+</script>
+    <div class="sections nav-sections">
+                <div class="section-items nav-sections-items"
+             data-mage-init='&#x7B;&quot;tabs&quot;&#x3A;&#x7B;&quot;openedState&quot;&#x3A;&quot;active&quot;&#x7D;&#x7D;'>
+                                            <div class="section-item-title nav-sections-item-title"
+                     data-role="collapsible">
+                    <a class="nav-sections-item-switch"
+                       data-toggle="switch" href="#store.menu">
+                        Menu                    </a>
+                </div>
+                <div class="section-item-content nav-sections-item-content"
+                     id="store.menu"
+                     data-role="content">
+                    <nav class="navigation" data-action="navigation">
+    <ul data-mage-init='{"menu":{"responsive":true, "expanded":true, "position":{"my":"left top","at":"left bottom"}}}'>
+        <li  class="level0 nav-1 category-item first last level-top parent"><a href="https://www.rubiks.com/en-us/shop.html"  class="level-top" ><span>Products</span></a><ul class="level0 submenu"><div class='nav-wrap'><div class="level1 link-wrap"><li  class="level1 nav-1-1 category-item first"><a href="https://www.rubiks.com/en-us/shop/cubes-and-puzzles.html" ><span>Cubes and Puzzles</span></a></li><li  class="level1 nav-1-2 category-item"><a href="https://www.rubiks.com/en-us/shop/speedcubes-accessories.html" ><span>Speedcubes &amp; Accessories</span></a></li><li  class="level1 nav-1-3 category-item"><a href="https://www.rubiks.com/en-us/shop/rubik-s-junior.html" ><span>Rubik&#039;s Junior</span></a></li><li  class="level1 nav-1-4 category-item"><a href="https://www.rubiks.com/en-us/shop/multiplayer-games.html" ><span>Multiplayer Games</span></a></li><li  class="level1 nav-1-5 category-item"><a href="https://www.rubiks.com/en-us/shop/novelty.html" ><span>Novelty</span></a></li><li  class="level1 nav-1-6 category-item last"><a href="https://www.rubiks.com/en-us/shop/all-products.html" ><span>All Products</span></a></li></div><li class="level1 nav-static-block"><div class="static-wrap"><div data-content-type="row" data-appearance="contained" data-element="main"><div data-enable-parallax="0" data-parallax-speed="0.5" data-background-images="{}" data-element="inner" style="justify-content: flex-start; display: flex; flex-direction: column; background-position: left top; background-size: cover; background-repeat: no-repeat; background-attachment: scroll; border-style: none; border-width: 1px; border-radius: 0px; margin: 0px 0px 10px; padding: 10px;"><div data-content-type="html" data-appearance="default" data-element="main" style="border-style: none; border-width: 1px; border-radius: 0px; margin: 0px; padding: 0px;" data-decoded="true"><p><a title="" href="https://www.rubiks.com/rubik-s-cube-3x3.html"> <img src="https://www.rubiks.com/media/wysiwyg/the-original-rubiks-cube.jpg" alt="Original Rubik's Cube" /> <span>The Iconic Rubik's Cube, Ideal for Gifting</span> </a></p>
+</div></div></div></div><div class="static-wrap"><div data-content-type="row" data-appearance="contained" data-element="main"><div data-enable-parallax="0" data-parallax-speed="0.5" data-background-images="{}" data-element="inner" style="justify-content: flex-start; display: flex; flex-direction: column; background-position: left top; background-size: cover; background-repeat: no-repeat; background-attachment: scroll; border-style: none; border-width: 1px; border-radius: 0px; margin: 0px 0px 10px; padding: 10px;"><div data-content-type="html" data-appearance="default" data-element="main" style="border-style: none; border-width: 1px; border-radius: 0px; margin: 0px; padding: 0px;" data-decoded="true"><p><a title="" href="https://www.rubiks.com/en-us/catalog/product/view/id/199/s/rubiks-speed/category/136/"> <img src="https://www.rubiks.com/media/wysiwyg/Mega_menu/spoeedcube-static-block.jpg" alt="" width="365"/> <span>EXCLUSIVE: The New Rubik’s Speed Cube – Engineered for Speed With Magnets</span> </a></p></div></div></div></div></li></div></ul></li>                <li class="level0 nav-2 active level-top parent"><a href="https://www.rubiks.com/en-us/solve-it" class="level-top"><span>Solve it</span></a>
+            <ul class="level0 submenu"><div class='nav-wrap'><div class="level1 link-wrap"><div data-content-type="row" data-appearance="contained" data-element="main"><div data-enable-parallax="0" data-parallax-speed="0.5" data-background-images="{}" data-element="inner" style="justify-content: flex-start; display: flex; flex-direction: column; background-position: left top; background-size: cover; background-repeat: no-repeat; background-attachment: scroll; border-style: none; border-width: 1px; border-radius: 0px; margin: 0px 0px 10px; padding: 10px;"><div data-content-type="html" data-appearance="default" data-element="main" style="border-style: none; border-width: 1px; border-radius: 0px; margin: 0px; padding: 0px;" data-decoded="true"><ul>
+<li class="level2 nav-1-1-1 first ui-menu-item"><a id="ui-id-8" class="ui-corner-all" tabindex="-1" href="https://www.rubiks.com/en-us/rubik-s-edge-solution-guide">EDGE SOLUTION GUIDE</a></li>
+<li class="level2 nav-1-1-8 ui-menu-item"><a id="ui-id-9" class="ui-corner-all" tabindex="-1" href="https://www.rubiks.com/en-us/how-to-solve-2x2-rubiks-cube">2x2 SOLUTION GUIDE</a></li>
+<li class="level2 nav-1-1-2 ui-menu-item"><a id="ui-id-9" class="ui-corner-all" tabindex="-1" href="https://www.rubiks.com/en-us/how-to-solve-rubiks-cube">3x3 SOLUTION GUIDE</a></li>
+<li class="level2 nav-1-1-3 ui-menu-item"><a id="ui-id-10" class="ui-corner-all" tabindex="-1" href="https://www.rubiks.com/en-us/how-to-solve-4x4-rubiks-cube">4x4 SOLUTION GUIDE</a></li>
+<li class="level2 nav-1-1-4 ui-menu-item"><a id="ui-id-11" class="ui-corner-all" tabindex="-1" href="https://www.rubiks.com/en-us/rubik-s-pyramid-solution-guide">PYRAMID SOLUTION GUIDE</a></li>
+<li class="level2 nav-1-1-5 ui-menu-item"><a id="ui-id-12" class="ui-corner-all" tabindex="-1" href="https://www.rubiks.com/en-us/rubiks-impossible-solution-guide">IMPOSSIBLE SOLUTION GUIDE</a></li>
+<li class="level2 nav-1-1-6 ui-menu-item"><a id="ui-id-13" class="ui-corner-all" tabindex="-1" href="https://www.rubiks.com/en-us/rubiks-magic-solution">MAGIC SOLUTION GUIDE</a></li>
+<li class="level2 nav-1-1-7 ui-menu-item"><a id="ui-id-14" class="ui-corner-all" tabindex="-1" href="https://www.rubiks.com/en-us/how-to-solve-rubiks-void"> VOID SOLUTION GUIDE</a></li>
+</ul>
+</div></div></div></div><li class="level1 nav-static-block"><div class="static-wrap full"><div data-content-type="row" data-appearance="contained" data-element="main"><div data-enable-parallax="0" data-parallax-speed="0.5" data-background-images="{}" data-element="inner" style="justify-content: flex-start; display: flex; flex-direction: column; background-position: left top; background-size: cover; background-repeat: no-repeat; background-attachment: scroll; border-style: none; border-width: 1px; border-radius: 0px; margin: 0px 0px 10px; padding: 10px;"><div data-content-type="html" data-appearance="default" data-element="main" style="border-style: none; border-width: 1px; border-radius: 0px; margin: 0px; padding: 0px;" data-decoded="true"><p><a title="" href="https://www.rubiks.com/en-us/solve-it/"> <img src="https://www.rubiks.com/media/wysiwyg/hints-tips-2.jpg" alt="" /></a></p>
+</div></div></div></div></li></div></ul>        </li>
+        <li class="level0 nav-3 active level-top parent"><a href="https://www.rubiks.com/en-us/about" class="level-top"><span>About</span></a>
+            <ul class="level0 submenu new">
+            <div data-content-type="row" data-appearance="contained" data-element="main"><div data-enable-parallax="0" data-parallax-speed="0.5" data-background-images="{}" data-element="inner" style="justify-content: flex-start; display: flex; flex-direction: column; background-position: left top; background-size: cover; background-repeat: no-repeat; background-attachment: scroll; border-style: none; border-width: 1px; border-radius: 0px; margin: 0px 0px 10px; padding: 10px;"><div data-content-type="html" data-appearance="default" data-element="main" style="border-style: none; border-width: 1px; border-radius: 0px; margin: 0px; padding: 0px;" data-decoded="true"><div class="nav-wrap">
+    <div class="level1 link-wrap">
+        <li class="level2"><a href="#"><span>2x2 SOLUTION GUIDE</span></a></li>
+        <li class="level2"><a href="#"><span>2x2 SOLUTION GUIDE</span></a></li>
+        <li class="level2"><a href="#"><span>2x2 SOLUTION GUIDE</span></a></li>
+        <li class="level2"><a href="#"><span>2x2 SOLUTION GUIDE</span></a></li>
+    </div>
+    <li class="level1 nav-static-block">
+        <a title="" href="#"> <img src="https://brmbox.co.uk/rubiks/pub/media/wysiwyg/hints-tips-2.jpg" alt=""></a>
+    </li>
+</div></div></div></div></ul>
+        </li>
+        <li class="level0 nav-4 level-top"><a href="https://www.rubiks.com/en-us/speed-cubing" class="level-top"><span>Speedcubing</span></a></li>
+                    <li class="level0 nav-5 level-top"><a href="https://www.rubiks.com/en-us/blog/" class="level-top"><span>Blog</span></a></li>
+                <li class="nav-mobile-account"><a href="https://www.rubiks.com/en-us/customer/account/login/" title="My Account">My account</a></li>
+    </ul>
+</nav>                </div>
+                                    </div>
+    </div>
+<div id="header-search" class="header-search">
+  <div class="block-content">
+    <form class="form minisearch" id="search_mini_form" action="https://www.rubiks.com/en-us/catalogsearch/result/" method="get">
+      <div class="field search">
+        <label class="label" for="search" data-role="minisearch-label">
+          <span>Search</span>
+        </label>
+        <div class="control">
+          <input id="search"
+            data-mage-init='{"quickSearch":{
+                              "formSelector":"#search_mini_form",
+                              "url":"https://www.rubiks.com/en-us/search/ajax/suggest/",
+                              "destinationSelector":"#search_autocomplete"}
+                            }'
+            type="text"
+            name="q"
+            value=""
+            placeholder="Type a question or search by keywords..."
+            class="input-text"
+            maxlength="128"
+            role="combobox"
+            aria-haspopup="false"
+            aria-autocomplete="both"
+            autocomplete="off"/>
+          <div id="search_autocomplete" class="search-autocomplete"></div>
+          <div class="mobile-search-close"></div>
+        </div>
+      </div>
+
+      <div class="actions">
+        <button type="submit"
+                title="Search"
+                class="action search">
+           <span>Search</span>
+        </button>
+      </div>
+    </form>
+  </div>
+</div>
+<div id='custom-popup-modal'>
+    <div class="block-content">
+    </div>
+    <div class="mobile-search-close"></div>
+</div>
+<script>
+    require(
+        [
+            'jquery',
+            'Magento_Ui/js/modal/modal',
+            'jquery/jquery.cookie',
+            'domReady!'
+        ],
+        function (
+            $,
+            modal
+        ) {
+            var AjaxUrl = "https://www.rubiks.com/en-us/list/index/geoip/";
+            var alterArray = JSON.parse('{"x-default":"https:\/\/www.rubiks.com\/en-us\/","fr-fr":"https:\/\/www.rubiks.com\/fr-fr\/","en-us":"https:\/\/www.rubiks.com\/en-us\/","en-eu":"https:\/\/www.rubiks.com\/en-eu\/"}');
+            var temp = '';
+            temp = $.cookie('geo_ip');//Get the cookies
+            $(document).ready(function () {
+                $('#custom-popup-modal').removeClass('active');
+                if (temp == null) {
+                    $.ajax({
+                        showLoader: false,
+                        url: AjaxUrl,
+                        data: {alterArray: alterArray},
+                        type: "POST"
+                    }).done(function (data) {
+                        if (data.output == '') {
+                            $('#custom-popup-modal').removeClass('active');
+                        }else if (data.output != '') {
+                            $('#custom-popup-modal .block-content').html(data.output);
+                            $('#custom-popup-modal').addClass('active');
+                            $('.page-header .before-header').css('display', 'none');
+                            $('main').css('margin-top', '100px');
+                        } else {
+                            $('#custom-popup-modal').removeClass('active');
+                            $('.page-header .before-header').css('display', 'block');
+                            var fullHeaderHeight = $('.page-header').outerHeight();
+                            $('.page-main').css('margin-top', fullHeaderHeight);
+                        }
+                        $('#custom-popup-modal .no').on('click', function (e) {
+                            e.preventDefault();
+                            $('#custom-popup-modal').removeClass('active');
+                            $('.page-header .before-header').css('display', 'block');
+                            var fullHeaderHeight = $('.page-header').outerHeight();
+                            $('.page-main').css('margin-top', fullHeaderHeight);
+                            $.cookie('geo_ip', 'true');//Set the cookies
+                        });
+                        $('#custom-popup-modal .mobile-search-close').click(function () {
+                            $('#custom-popup-modal').removeClass('active');
+                            $('.page-header .before-header').css('display', 'block');
+                            var fullHeaderHeight = $('.page-header').outerHeight();
+                            $('.page-main').css('margin-top', fullHeaderHeight);
+                        });
+                        return true;
+                    });
+
+                }
+
+            });
+
+        });
+</script>
+</div></div><div class="after-header"><div data-bind="scope: 'messages'">
+    <!-- ko if: cookieMessages && cookieMessages.length > 0 -->
+    <div role="alert" data-bind="foreach: { data: cookieMessages, as: 'message' }" class="messages">
+        <div data-bind="attr: {
+            class: 'message-' + message.type + ' ' + message.type + ' message',
+            'data-ui-id': 'message-' + message.type
+        }">
+            <div data-bind="html: message.text"></div>
+        </div>
+    </div>
+    <!-- /ko -->
+    <!-- ko if: messages().messages && messages().messages.length > 0 -->
+    <div role="alert" data-bind="foreach: { data: messages().messages, as: 'message' }" class="messages">
+        <div data-bind="attr: {
+            class: 'message-' + message.type + ' ' + message.type + ' message',
+            'data-ui-id': 'message-' + message.type
+        }">
+            <div data-bind="html: message.text"></div>
+        </div>
+    </div>
+    <!-- /ko -->
+</div>
+<script type="text/x-magento-init">
+    {
+        "*": {
+            "Magento_Ui/js/core/app": {
+                "components": {
+                        "messages": {
+                            "component": "Magento_Theme/js/view/messages"
+                        }
+                    }
+                }
+            }
+    }
+</script>
+    <style type="text/css">
+        #minicart-content-wrapper .block-title .subtitle.fr,
+        #minicart-content-wrapper .block-title .subtitle{
+            display: none;
+        }
+        #minicart-content-wrapper .block-title .subtitle.uk{
+            display: none;
+        }
+        .minicart-wrap .h2{
+            margin-bottom: 20px;
+        }
+
+    </style>
+
+    
+<div class="minicart-wrapper" style="overflow: auto;">
+    <div data-block="minicart" class="minicart-wrap">
+            <div class="block block-minicart empty"
+             data-role="dropdownDialog"
+             data-mage-init='{"dropdownDialog":{
+                "appendTo":"[data-block=minicart]",
+                "triggerTarget":".showcart",
+                "timeout": "2000",
+                "closeOnMouseLeave": false,
+                "closeOnEscape": true,
+                "triggerClass":"active",
+                "parentClass":"active",
+                "buttons":[]}}'>
+            <div id="minicart-content-wrapper" data-bind="scope: 'minicart_content'">
+                <!-- ko template: getTemplate() --><!-- /ko -->
+            </div>
+                    </div>
+        <script>
+        window.checkout = {"shoppingCartUrl":"https:\/\/www.rubiks.com\/en-us\/checkout\/cart\/","checkoutUrl":"https:\/\/www.rubiks.com\/en-us\/checkout\/","updateItemQtyUrl":"https:\/\/www.rubiks.com\/en-us\/checkout\/sidebar\/updateItemQty\/","removeItemUrl":"https:\/\/www.rubiks.com\/en-us\/checkout\/sidebar\/removeItem\/","imageTemplate":"Magento_Catalog\/product\/image_with_borders","baseUrl":"https:\/\/www.rubiks.com\/en-us\/","minicartMaxItemsVisible":5,"websiteId":"3","maxItemsToDisplay":10,"storeId":"8","customerLoginUrl":"https:\/\/www.rubiks.com\/en-us\/customer\/account\/login\/referer\/aHR0cHM6Ly93d3cucnViaWtzLmNvbS9lbi11cy8%2C\/","isRedirectRequired":false,"autocomplete":"off","captcha":{"user_login":{"isCaseSensitive":false,"imageHeight":50,"imageSrc":"","refreshUrl":"https:\/\/www.rubiks.com\/en-us\/captcha\/refresh\/","isRequired":false,"timestamp":1629732668}}};
+    </script>
+    <script type="text/x-magento-init">
+    {
+        "[data-block='minicart']": {
+            "Magento_Ui/js/core/app": {"components":{"minicart_content":{"children":{"subtotal.container":{"children":{"subtotal":{"children":{"subtotal.totals":{"config":{"display_cart_subtotal_incl_tax":0,"display_cart_subtotal_excl_tax":1,"template":"Magento_Tax\/checkout\/minicart\/subtotal\/totals"},"component":"Magento_Tax\/js\/view\/checkout\/minicart\/subtotal\/totals","children":{"subtotal.totals.msrp":{"component":"Magento_Msrp\/js\/view\/checkout\/minicart\/subtotal\/totals","config":{"displayArea":"minicart-subtotal-hidden","template":"Magento_Msrp\/checkout\/minicart\/subtotal\/totals"}}}}},"component":"uiComponent","config":{"template":"Magento_Checkout\/minicart\/subtotal"}}},"component":"uiComponent","config":{"displayArea":"subtotalContainer"}},"item.renderer":{"component":"uiComponent","config":{"displayArea":"defaultRenderer","template":"Magento_Checkout\/minicart\/item\/default"},"children":{"item.image":{"component":"Magento_Catalog\/js\/view\/image","config":{"template":"Magento_Catalog\/product\/image","displayArea":"itemImage"}},"checkout.cart.item.price.sidebar":{"component":"uiComponent","config":{"template":"Magento_Checkout\/minicart\/item\/price","displayArea":"priceSidebar"}}}},"extra_info":{"component":"uiComponent","config":{"displayArea":"extraInfo"}},"promotion":{"component":"uiComponent","config":{"displayArea":"promotion"}}},"config":{"itemRenderer":{"default":"defaultRenderer","simple":"defaultRenderer","virtual":"defaultRenderer"},"template":"Magento_Checkout\/minicart\/content"},"component":"Magento_Checkout\/js\/view\/minicart"}},"types":[]}        },
+        "*": {
+            "Magento_Ui/js/block-loader": "https://www.rubiks.com/static/version1607342405/frontend/Bestresponse/rubiks/en_GB/images/loader-1.gif"
+        }
+    }
+    </script>
+    </div>
+    <div data-bind="afterRender: function() {window.brm.qtyinput(jQuery('input.item-qty'))}"></div>
+</div>
+
+<script type="text/javascript">
+    require([
+        "jquery",
+        "mage/mage",
+        "perfectscrollbar"
+
+    ], function ($) {
+        $(document).ready(function () {
+            $('.minicart-wrap').perfectScrollbar();
+        });
+    });
+</script>
+
+
+</div></header><main id="maincontent" class="page-main"><a id="contentarea" tabindex="-1"></a>
+<div class="page messages"><div data-placeholder="messages"></div>
+</div><div class="columns"><div class="column main"><input name="form_key" type="hidden" value="bMK14tsxLm4CPukN" /><script type="text/x-magento-init">
+{"*":{"Magento_Customer\/js\/section-config":{"sections":{"stores\/store\/switch":"*","stores\/store\/switchrequest":"*","directory\/currency\/switch":"*","*":["messages"],"customer\/account\/logout":["recently_viewed_product","recently_compared_product","hic-user-data"],"customer\/account\/loginpost":["hic-user-data"],"customer\/account\/createpost":["hic-user-data"],"customer\/account\/editpost":"*","customer\/ajax\/login":["checkout-data","cart","captcha","hic-user-data"],"catalog\/product_compare\/add":["compare-products"],"catalog\/product_compare\/remove":["compare-products"],"catalog\/product_compare\/clear":["compare-products"],"sales\/guest\/reorder":["cart"],"sales\/order\/reorder":["cart"],"checkout\/cart\/add":["cart","hic-cart-data"],"checkout\/cart\/delete":["cart","hic-cart-data"],"checkout\/cart\/updatepost":["cart","hic-cart-data"],"checkout\/cart\/updateitemoptions":["cart","hic-cart-data"],"checkout\/cart\/couponpost":["cart","hic-cart-data"],"checkout\/cart\/estimatepost":["cart","hic-cart-data"],"checkout\/cart\/estimateupdatepost":["cart","hic-cart-data"],"checkout\/onepage\/saveorder":["cart","checkout-data","last-ordered-items","hic-cart-data","checkout-fields"],"checkout\/sidebar\/removeitem":["cart","hic-cart-data"],"checkout\/sidebar\/updateitemqty":["cart","hic-cart-data"],"rest\/*\/v1\/carts\/*\/payment-information":["cart","last-ordered-items","instant-purchase","hic-cart-data"],"rest\/*\/v1\/guest-carts\/*\/payment-information":["cart","hic-cart-data"],"rest\/*\/v1\/guest-carts\/*\/selected-payment-method":["cart","checkout-data","hic-cart-data"],"rest\/*\/v1\/carts\/*\/selected-payment-method":["cart","checkout-data","instant-purchase","hic-cart-data"],"authorizenet\/directpost_payment\/place":["cart","checkout-data"],"wishlist\/index\/add":["wishlist"],"wishlist\/index\/remove":["wishlist"],"wishlist\/index\/updateitemoptions":["wishlist"],"wishlist\/index\/update":["wishlist"],"wishlist\/index\/cart":["wishlist","cart"],"wishlist\/index\/fromcart":["wishlist","cart"],"wishlist\/index\/allcart":["wishlist","cart"],"wishlist\/shared\/allcart":["wishlist","cart"],"wishlist\/shared\/cart":["cart"],"customer_order\/cart\/updatefaileditemoptions":["cart"],"checkout\/cart\/updatefaileditemoptions":["cart"],"customer_order\/cart\/advancedadd":["cart"],"checkout\/cart\/advancedadd":["cart"],"checkout\/cart\/removeallfailed":["cart"],"customer_order\/cart\/addfaileditems":["cart"],"checkout\/cart\/addfaileditems":["cart"],"customer_order\/sku\/uploadfile":["cart"],"giftregistry\/index\/cart":["cart"],"giftregistry\/view\/addtocart":["cart"],"paypal\/express\/placeorder":["cart","checkout-data"],"paypal\/payflowexpress\/placeorder":["cart","checkout-data"],"paypal\/express\/onauthorization":["cart","checkout-data"],"customer\/address\/*":["instant-purchase"],"customer\/account\/*":["instant-purchase"],"vault\/cards\/deleteaction":["instant-purchase"],"wishlist\/index\/copyitem":["wishlist"],"wishlist\/index\/copyitems":["wishlist"],"wishlist\/index\/deletewishlist":["wishlist","multiplewishlist"],"wishlist\/index\/createwishlist":["multiplewishlist"],"wishlist\/index\/moveitem":["wishlist"],"wishlist\/index\/moveitems":["wishlist"],"wishlist\/search\/addtocart":["cart","wishlist"],"multishipping\/checkout\/overviewpost":["cart"],"braintree\/paypal\/placeorder":["cart","checkout-data"],"braintree\/googlepay\/placeorder":["cart","checkout-data"],"persistent\/index\/unsetcookie":["persistent"],"review\/product\/post":["review"],"gdpr\/customer\/anonymise":["customer"],"ajaxcartpro\/cart\/add":["hic-cart-data"]},"clientSideSections":["checkout-data","cart-data"],"baseUrls":["https:\/\/www.rubiks.com\/en-us\/"]}}}</script>
+<script type="text/x-magento-init">
+{"*":{"Magento_Customer\/js\/customer-data":{"sectionLoadUrl":"https:\/\/www.rubiks.com\/en-us\/customer\/section\/load\/","expirableSectionLifetime":60,"expirableSectionNames":["cart","persistent"],"cookieLifeTime":"3600","updateSessionUrl":"https:\/\/www.rubiks.com\/en-us\/customer\/account\/updateSession\/"}}}</script>
+<script type="text/x-magento-init">
+{"*":{"Magento_Customer\/js\/invalidation-processor":{"invalidationRules":{"website-rule":{"Magento_Customer\/js\/invalidation-rules\/website-rule":{"scopeConfig":{"websiteId":3}}}}}}}</script>
+<script type="text/x-magento-init">
+    {
+        "body": {
+            "pageCache": {"url":"https:\/\/www.rubiks.com\/en-us\/page_cache\/block\/render\/","handles":["default","cms_index_index","cms_page_view","cms_index_index_id_north-america-home"],"originalRequest":{"route":"cms","controller":"index","action":"index","uri":"\/en-us\/"},"versionCookieName":"private_content_version"}        }
+    }
+</script>
+<script type="text/x-magento-init">
+{"*":{"Magento_Banner\/js\/model\/banner":{"sectionLoadUrl":"https:\/\/www.rubiks.com\/en-us\/banner\/ajax\/load\/","cacheTtl":30000}}}</script>
+
+
+<script>
+require([
+    'jquery',
+    'jquery-ui-modules/datepicker'
+], function($){
+
+//<![CDATA[
+    $.extend(true, $, {
+        calendarConfig: {
+            dayNames: ["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"],
+            dayNamesMin: ["Sun","Mon","Tue","Wed","Thu","Fri","Sat"],
+            monthNames: ["January","February","March","April","May","June","July","August","September","October","November","December"],
+            monthNamesShort: ["Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"],
+            infoTitle: "About\u0020the\u0020calendar",
+            firstDay: 1,
+            closeText: "Close",
+            currentText: "Go\u0020Today",
+            prevText: "Previous",
+            nextText: "Next",
+            weekHeader: "WK",
+            timeText: "Time",
+            hourText: "Hour",
+            minuteText: "Minute",
+            dateFormat: $.datepicker.RFC_2822,
+            showOn: "button",
+            showAnim: "",
+            changeMonth: true,
+            changeYear: true,
+            buttonImageOnly: null,
+            buttonImage: null,
+            showButtonPanel: true,
+            showWeek: true,
+            timeFormat: '',
+            showTime: false,
+            showHour: false,
+            showMinute: false
+        }
+    });
+
+    enUS = {"m":{"wide":["January","February","March","April","May","June","July","August","September","October","November","December"],"abbr":["Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"]}}; // en_US locale reference
+//]]>
+
+});
+</script>
+    <script data-role="msrp-popup-template" type="text/x-magento-template">
+    <div id="map-popup-click-for-price" class="map-popup">
+        <div class="popup-header">
+            <strong class="title" id="map-popup-heading-price"></strong>
+        </div>
+        <div class="popup-content">
+            <div class="map-info-price" id="map-popup-content">
+                <div class="price-box">
+                    <div class="map-msrp" id="map-popup-msrp-box">
+                        <span class="label">Price</span>
+                        <span class="old-price map-old-price" id="map-popup-msrp">
+                            <span class="price"></span>
+                        </span>
+                    </div>
+                    <div class="map-price" id="map-popup-price-box">
+                        <span class="label">Actual Price</span>
+                        <span id="map-popup-price" class="actual-price"></span>
+                    </div>
+                </div>
+                <form action="" method="POST" class="map-form-addtocart">
+                    <input type="hidden" name="product" class="product_id" value="" />
+                    <button type="button"
+                            title="Add to Cart"
+                            class="action tocart primary">
+                        <span>Add to Cart</span>
+                    </button>
+                    <div class="additional-addtocart-box">
+                                            </div>
+                </form>
+            </div>
+            <div class="map-text" id="map-popup-text">
+                Our price is lower than the manufacturer&#039;s &quot;minimum advertised price.&quot; As a result, we cannot show you the price in catalog or the product page. <br><br> You have no obligation to purchase the product once you know the price. You can simply remove the item from your cart.            </div>
+        </div>
+    </div>
+    </script>
+    <script data-role="msrp-info-template" type="text/x-magento-template">
+    <div id="map-popup-what-this" class="map-popup">
+        <div class="popup-header">
+            <strong class="title" id="map-popup-heading-what-this"></strong>
+        </div>
+        <div class="popup-content">
+            <div class="map-help-text" id="map-popup-text-what-this">
+                Our price is lower than the manufacturer&#039;s &quot;minimum advertised price.&quot; As a result, we cannot show you the price in catalog or the product page. <br><br> You have no obligation to purchase the product once you know the price. You can simply remove the item from your cart.            </div>
+        </div>
+    </div>
+    </script>
+<div class="home-banner" data-content-type="row" data-appearance="full-width" data-enable-parallax="0" data-parallax-speed="0.5" data-background-images="{}" data-element="main" style="justify-content: flex-end; display: flex; flex-direction: column; background-position: left top; background-size: cover; background-repeat: no-repeat; background-attachment: scroll; border-style: none; border-width: 1px; border-radius: 0px; margin: 0px 0px 30px; padding: 0px;"><div class="row-full-width-inner" data-element="inner"><div class="pagebuilder-slider full-width-slider" data-content-type="slider" data-appearance="default" data-autoplay="false" data-autoplay-speed="4000" data-fade="false" data-infinite-loop="false" data-show-arrows="true" data-show-dots="true" data-element="main" style="text-align: right; min-height: 525px; border-style: none; border-width: 1px; border-radius: 0px; margin: 0px; padding: 0px;"><div data-content-type="slide" data-slide-name="" data-appearance="collage-right" data-show-button="always" data-show-overlay="never" data-element="main" style="margin: 0px;"><a href="https://www.instagram.com/rubiks_official/" target="" data-link-type="default" data-element="link"><div class="pagebuilder-slide-wrapper background-image-6123bf3cd4a0c" data-background-images='{\"desktop_image\":\"https://www.rubiks.com/media/wysiwyg/NeverGiveUpDay_WebsiteBanner_Desktop_1916x707.jpg\",\"mobile_image\":\"https://www.rubiks.com/media/wysiwyg/NeverGiveUpDay_WebsiteBanner_Mobile_753x1024.jpg\"}' data-element="wrapper" style="background-position: left top; background-size: cover; background-repeat: no-repeat; border-style: none; border-width: 1px; border-radius: 0px; min-height: 525px; padding: 0px; text-align: right;"><div class="pagebuilder-overlay" data-overlay-color="" data-element="overlay" style="background-color: transparent;"><div class="pagebuilder-collage-content"><div data-element="content"></div><button type="button" class="pagebuilder-slide-button pagebuilder-button-primary" data-element="button" style="opacity: 1; visibility: visible;">EXPLORE</button></div></div></div><style type="text/css">.background-image-6123bf3cd4a0c {background-image: url(https://www.rubiks.com/media/wysiwyg/NeverGiveUpDay_WebsiteBanner_Desktop_1916x707.jpg);}@media only screen and (max-width: 768px) {.background-image-6123bf3cd4a0c {background-image: url(https://www.rubiks.com/media/wysiwyg/NeverGiveUpDay_WebsiteBanner_Mobile_753x1024.jpg);}}</style></a></div><div data-content-type="slide" data-slide-name="" data-appearance="collage-right" data-show-button="always" data-show-overlay="never" data-element="main" style="margin: 0px;"><a href="https://www.rubiks.com/en-us/shop.html" target="" data-link-type="default" data-element="link"><div class="pagebuilder-slide-wrapper background-image-6123bf3cd4b0a" data-background-images='{\"desktop_image\":\"https://www.rubiks.com/media/wysiwyg/Homepage/be-a-solver-of-tomorrow-desktop-no-cta.jpg\",\"mobile_image\":\"https://www.rubiks.com/media/wysiwyg/Homepage/be-a-solver-of-tomorrow-mob-no-cta.jpg\"}' data-element="wrapper" style="background-position: left top; background-size: cover; background-repeat: no-repeat; border-style: none; border-width: 1px; border-radius: 0px; min-height: 525px; padding: 0px; text-align: right;"><div class="pagebuilder-overlay" data-overlay-color="" data-element="overlay" style="background-color: transparent;"><div class="pagebuilder-collage-content"><div data-element="content"></div><button type="button" class="pagebuilder-slide-button pagebuilder-button-primary" data-element="button" style="opacity: 1; visibility: visible;">EXPLORE</button></div></div></div><style type="text/css">.background-image-6123bf3cd4b0a {background-image: url(https://www.rubiks.com/media/wysiwyg/Homepage/be-a-solver-of-tomorrow-desktop-no-cta.jpg);}@media only screen and (max-width: 768px) {.background-image-6123bf3cd4b0a {background-image: url(https://www.rubiks.com/media/wysiwyg/Homepage/be-a-solver-of-tomorrow-mob-no-cta.jpg);}}</style></a></div><div data-content-type="slide" data-slide-name="" data-appearance="collage-right" data-show-button="always" data-show-overlay="never" data-element="main" style="margin: 0px;"><a href="https://www.rubiks.com/en-us/shop.html" target="" data-link-type="default" data-element="link"><div class="pagebuilder-slide-wrapper background-image-6123bf3cd4bd5" data-background-images='{\"desktop_image\":\"https://www.rubiks.com/media/wysiwyg/hp-banner-welcome-desktop-no-border-2.jpg\",\"mobile_image\":\"https://www.rubiks.com/media/wysiwyg/welcome-to-the-home-mobile-noorange.jpg\"}' data-element="wrapper" style="background-position: left top; background-size: cover; background-repeat: no-repeat; border-style: none; border-width: 1px; border-radius: 0px; min-height: 525px; padding: 0px; text-align: right;"><div class="pagebuilder-overlay" data-overlay-color="" data-element="overlay" style="background-color: transparent;"><div class="pagebuilder-collage-content"><div data-element="content"></div><button type="button" class="pagebuilder-slide-button pagebuilder-button-primary" data-element="button" style="opacity: 1; visibility: visible;">EXPLORE</button></div></div></div><style type="text/css">.background-image-6123bf3cd4bd5 {background-image: url(https://www.rubiks.com/media/wysiwyg/hp-banner-welcome-desktop-no-border-2.jpg);}@media only screen and (max-width: 768px) {.background-image-6123bf3cd4bd5 {background-image: url(https://www.rubiks.com/media/wysiwyg/welcome-to-the-home-mobile-noorange.jpg);}}</style></a></div><div data-content-type="slide" data-slide-name="" data-appearance="collage-right" data-show-button="always" data-show-overlay="never" data-element="main" style="margin: 0px;"><a href="https://www.rubiks.com/en-us/shop.html" target="" data-link-type="default" data-element="link"><div class="pagebuilder-slide-wrapper background-image-6123bf3cd4c4b" data-background-images='{\"desktop_image\":\"https://www.rubiks.com/media/wysiwyg/unscramble-hp-no-border_1.jpg\",\"mobile_image\":\"https://www.rubiks.com/media/wysiwyg/unscramble-mob2.jpg\"}' data-element="wrapper" style="background-position: left top; background-size: cover; background-repeat: no-repeat; border-style: none; border-width: 1px; border-radius: 0px; min-height: 525px; padding: 0px; text-align: right;"><div class="pagebuilder-overlay" data-overlay-color="" data-element="overlay" style="background-color: transparent;"><div class="pagebuilder-collage-content"><div data-element="content"></div><button type="button" class="pagebuilder-slide-button pagebuilder-button-primary" data-element="button" style="opacity: 1; visibility: visible;">SOLVE YOUR CUBES</button></div></div></div><style type="text/css">.background-image-6123bf3cd4c4b {background-image: url(https://www.rubiks.com/media/wysiwyg/unscramble-hp-no-border_1.jpg);}@media only screen and (max-width: 768px) {.background-image-6123bf3cd4c4b {background-image: url(https://www.rubiks.com/media/wysiwyg/unscramble-mob2.jpg);}}</style></a></div></div></div></div><div data-content-type="row" data-appearance="contained" data-element="main"><div data-enable-parallax="0" data-parallax-speed="0.5" data-background-images="{}" data-element="inner" style="justify-content: flex-start; display: flex; flex-direction: column; background-position: left top; background-size: cover; background-repeat: no-repeat; background-attachment: scroll; border-style: none; border-width: 1px; border-radius: 0px; margin: 0px; padding: 0px 15px;"><div class="pagebuilder-column-group" style="display: flex;" data-content-type="column-group" data-grid-size="12" data-element="main"><div class="pagebuilder-column box-shadow-block background-image-6123bf3cd4d86" data-content-type="column" data-appearance="full-height" data-background-images='{\"desktop_image\":\"https://www.rubiks.com/media/wysiwyg/original-rubiks-cube-body-final_1.jpg\"}' data-element="main" style="justify-content: flex-end; display: flex; flex-direction: column; background-position: center center; background-size: cover; background-repeat: no-repeat; background-attachment: scroll; text-align: center; border-style: none; border-width: 1px; border-radius: 9px; min-height: 345px; width: calc(33.3333% - 30px); margin: 0px 15px 30px; padding: 0px 0px 10px; align-self: stretch;"><div data-content-type="buttons" data-appearance="inline" data-same-width="false" data-element="main" style="text-align: center; border-style: none; border-width: 1px; border-radius: 0px; margin: 0px; padding: 0px 10px;"><div class="block-button" data-content-type="button-item" data-appearance="default" data-element="main" style="display: inline-block;"><a class="pagebuilder-button-primary" href="https://www.rubiks.com/en-us/rubik-s-cube-3x3.html" target="" data-link-type="default" data-element="link" style="text-align: right;"><span data-element="link_text">EXPLORE</span></a></div></div></div><div class="pagebuilder-column box-shadow-block background-image-6123bf3cd4e04" data-content-type="column" data-appearance="full-height" data-background-images='{\"desktop_image\":\"https://www.rubiks.com/media/wysiwyg/time-to-battle_1.jpg\",\"mobile_image\":\"https://www.rubiks.com/media/wysiwyg/time-to-battle-mob-2_1.jpg\"}' data-element="main" style="justify-content: flex-end; display: flex; flex-direction: column; background-position: left top; background-size: cover; background-repeat: no-repeat; background-attachment: scroll; text-align: left; border-style: none; border-width: 1px; border-radius: 9px; min-height: 345px; width: calc(66.6667% - 30px); margin: 0px 15px 30px; padding: 0px 0px 10px; align-self: stretch;"><div data-content-type="buttons" data-appearance="inline" data-same-width="false" data-element="main" class="block-button" style="border-style: none; border-width: 1px; border-radius: 0px; margin: 0px; padding: 10px 10px 0px;"><div class="block-button" data-content-type="button-item" data-appearance="default" data-element="main" style="display: inline-block;"><a class="pagebuilder-button-primary" href="https://www.rubiks.com/en-us/rubik-s-race.html" target="_blank" data-link-type="default" data-element="link" style="text-align: center;"><span data-element="link_text">DISCOVER GAMES</span></a></div></div></div><style type="text/css">.background-image-6123bf3cd4d86 {background-image: url(https://www.rubiks.com/media/wysiwyg/original-rubiks-cube-body-final_1.jpg);}</style><style type="text/css">.background-image-6123bf3cd4e04 {background-image: url(https://www.rubiks.com/media/wysiwyg/time-to-battle_1.jpg);}@media only screen and (max-width: 768px) {.background-image-6123bf3cd4e04 {background-image: url(https://www.rubiks.com/media/wysiwyg/time-to-battle-mob-2_1.jpg);}}</style></div></div></div><div data-content-type="row" data-appearance="contained" data-element="main"><div data-enable-parallax="0" data-parallax-speed="0.5" data-background-images="{}" data-element="inner" style="justify-content: flex-start; display: flex; flex-direction: column; background-position: left top; background-size: cover; background-repeat: no-repeat; background-attachment: scroll; border-style: none; border-width: 1px; border-radius: 0px; margin: 0px 0px 10px; padding: 10px;"><div class="pagebuilder-column-group" style="display: flex;" data-content-type="column-group" data-grid-size="12" data-element="main"><div class="pagebuilder-column background-image-6123bf3cd4f55" data-content-type="column" data-appearance="full-height" data-background-images='{\"desktop_image\":\"https://www.rubiks.com/media/wysiwyg/App_3.jpeg\"}' data-element="main" style="justify-content: flex-end; display: flex; flex-direction: column; background-position: left top; background-size: cover; background-repeat: no-repeat; background-attachment: scroll; border-style: none; border-width: 1px; border-radius: 0px; width: 33.3333%; margin: 0px; padding: 10px; align-self: stretch;"><div data-content-type="buttons" data-appearance="inline" data-same-width="false" data-element="main" class="block-button" style="text-align: center; border-style: none; border-width: 1px; border-radius: 0px; margin: 0px; padding: 10px 10px 0px;"><div class="block-button" data-content-type="button-item" data-appearance="default" data-element="main" style="display: inline-block;"><a class="pagebuilder-button-primary" href="https://apps.apple.com/gb/app/rubiks-official-cube/id1504482335" target="_blank" data-link-type="default" data-element="link" style="text-align: center;"><span data-element="link_text">DOWNLOAD ON IOS</span></a></div></div></div><div class="pagebuilder-column background-image-6123bf3cd4fd6" data-content-type="column" data-appearance="full-height" data-background-images='{\"desktop_image\":\"https://www.rubiks.com/media/wysiwyg/connected-cube-banner_2.jpeg\"}' data-element="main" style="justify-content: flex-end; display: flex; flex-direction: column; background-position: left top; background-size: cover; background-repeat: no-repeat; background-attachment: scroll; border-style: none; border-width: 1px; border-radius: 0px; min-height: 345px; width: 66.6667%; margin: 0px; padding: 10px; align-self: stretch;"><div data-content-type="buttons" data-appearance="inline" data-same-width="false" data-element="main" class="block-button" style="text-align: left; border-style: none; border-width: 1px; border-radius: 0px; margin: 0px; padding: 10px 10px 0px;"><div class="block-button" data-content-type="button-item" data-appearance="default" data-element="main" style="display: inline-block;"><a class="pagebuilder-button-primary" href="https://www.rubiks.com/en-us/rubiks-connected-cube.html" target="" data-link-type="default" data-element="link" style="text-align: left;"><span data-element="link_text">EXPLORE</span></a></div></div></div><style type="text/css">.background-image-6123bf3cd4f55 {background-image: url(https://www.rubiks.com/media/wysiwyg/App_3.jpeg);}</style><style type="text/css">.background-image-6123bf3cd4fd6 {background-image: url(https://www.rubiks.com/media/wysiwyg/connected-cube-banner_2.jpeg);}</style></div></div></div><div data-content-type="row" data-appearance="contained" data-element="main"><div data-enable-parallax="0" data-parallax-speed="0.5" data-background-images="{}" data-element="inner" style="justify-content: flex-start; display: flex; flex-direction: column; background-position: left top; background-size: cover; background-repeat: no-repeat; background-attachment: scroll; border-style: none; border-width: 1px; border-radius: 0px; margin: 0px; padding: 0px 15px;"><div class="pagebuilder-column-group" style="display: flex;" data-content-type="column-group" data-grid-size="12" data-element="main"><div class="pagebuilder-column box-shadow-block background-image-6123bf3cd50ca" data-content-type="column" data-appearance="full-height" data-background-images='{\"desktop_image\":\"https://www.rubiks.com/media/wysiwyg/looking-for-the-perfect-gift_2.jpg\",\"mobile_image\":\"https://www.rubiks.com/media/wysiwyg/unscramble-mob-3_3_1.jpg\"}' data-element="main" style="justify-content: flex-end; display: flex; flex-direction: column; background-position: left top; background-size: cover; background-repeat: no-repeat; background-attachment: scroll; text-align: right; border-style: none; border-width: 1px; border-radius: 9px; min-height: 345px; width: calc(66.6667% - 30px); margin: 0px 15px 30px; padding: 0px 0px 10px; align-self: stretch;"><div data-content-type="buttons" data-appearance="inline" data-same-width="false" data-element="main" class="block-button" style="border-style: none; border-width: 1px; border-radius: 0px; margin: 0px; padding: 10px 10px 0px;"><div class="block-button" data-content-type="button-item" data-appearance="default" data-element="main" style="display: inline-block;"><a class="pagebuilder-button-primary" href="https://www.rubiks.com/en-us/shop.html" target="_blank" data-link-type="default" data-element="link" style="text-align: center;"><span data-element="link_text">EXPLORE GAMES</span></a></div></div></div><div class="pagebuilder-column box-shadow-block background-image-6123bf3cd518d" data-content-type="column" data-appearance="full-height" data-background-images='{\"desktop_image\":\"https://www.rubiks.com/media/wysiwyg/beyond-puzzles_1.jpg\"}' data-element="main" style="justify-content: flex-end; display: flex; flex-direction: column; background-position: center center; background-size: cover; background-repeat: no-repeat; background-attachment: scroll; text-align: center; border-style: none; border-width: 1px; border-radius: 9px; min-height: 345px; width: calc(33.3333% - 30px); margin: 0px 15px 30px; padding: 0px 0px 10px; align-self: stretch;"><div data-content-type="buttons" data-appearance="inline" data-same-width="false" data-element="main" style="text-align: center; border-style: none; border-width: 1px; border-radius: 0px; margin: 0px; padding: 10px 10px 0px;"><div class="block-button" data-content-type="button-item" data-appearance="default" data-element="main" style="display: inline-block;"><a class="pagebuilder-button-primary" href="https://www.rubiks.com/en-us/shop.html" target="" data-link-type="default" data-element="link" style="text-align: right;"><span data-element="link_text">EXPLORE</span></a></div></div></div><style type="text/css">.background-image-6123bf3cd50ca {background-image: url(https://www.rubiks.com/media/wysiwyg/looking-for-the-perfect-gift_2.jpg);}@media only screen and (max-width: 768px) {.background-image-6123bf3cd50ca {background-image: url(https://www.rubiks.com/media/wysiwyg/unscramble-mob-3_3_1.jpg);}}</style><style type="text/css">.background-image-6123bf3cd518d {background-image: url(https://www.rubiks.com/media/wysiwyg/beyond-puzzles_1.jpg);}</style></div></div></div><div data-content-type="row" data-appearance="contained" data-element="main"><div class="box-shadow-block background-image-6123bf3cd520b" data-enable-parallax="0" data-parallax-speed="0.5" data-background-images='{\"desktop_image\":\"https://www.rubiks.com/media/wysiwyg/hints-tips_4.jpg\",\"mobile_image\":\"https://www.rubiks.com/media/wysiwyg/hints-tips-mob_4.jpg\"}' data-element="inner" style="justify-content: flex-end; display: flex; flex-direction: column; background-position: left top; background-size: cover; background-repeat: no-repeat; background-attachment: scroll; text-align: right; border-style: none; border-width: 1px; border-radius: 9px; min-height: 345px; margin: 0px 15px 30px; padding: 0px 15px 10px;"><div data-content-type="buttons" data-appearance="inline" data-same-width="false" data-element="main" style="border-style: none; border-width: 1px; border-radius: 0px; margin: 0px; padding: 10px 10px 0px;"><div class="block-button" data-content-type="button-item" data-appearance="default" data-element="main" style="display: inline-block;"><a class="pagebuilder-button-primary" href="https://www.rubiks.com/en-us/solve-it" target="" data-link-type="default" data-element="link" style="text-align: center;"><span data-element="link_text">EXPLORE</span></a></div></div></div><style type="text/css">.background-image-6123bf3cd520b {background-image: url(https://www.rubiks.com/media/wysiwyg/hints-tips_4.jpg);}@media only screen and (max-width: 768px) {.background-image-6123bf3cd520b {background-image: url(https://www.rubiks.com/media/wysiwyg/hints-tips-mob_4.jpg);}}</style></div><div data-content-type="row" data-appearance="contained" data-element="main" style="display: none;"><div class="box-shadow-block background-image-6123bf3cd52cd" data-enable-parallax="0" data-parallax-speed="0.5" data-background-images='{\"desktop_image\":\"https://www.rubiks.com/media/wysiwyg/Ambassador-Landscape-Thumbnail-dekstop.jpeg\",\"mobile_image\":\"https://www.rubiks.com/media/wysiwyg/Ambassador-Landscape-Thumbnail-mob---NO-LOGO.jpeg\"}' data-element="inner" style="justify-content: flex-end; display: flex; flex-direction: column; background-position: left top; background-size: cover; background-repeat: no-repeat; background-attachment: scroll; text-align: right; border-style: none; border-width: 1px; border-radius: 9px; min-height: 345px; margin: 0px 15px 30px; padding: 0px 15px 10px;"><div data-content-type="buttons" data-appearance="inline" data-same-width="false" data-element="main" style="border-style: none; border-width: 1px; border-radius: 0px; margin: 0px; padding: 10px 10px 0px;"><div class="block-button" data-content-type="button-item" data-appearance="default" data-element="main" style="display: inline-block;"><a class="pagebuilder-button-primary" href="https://www.rubiks.com/en-us/ambassadors" target="" data-link-type="default" data-element="link" style="text-align: center;"><span data-element="link_text">MEET THE AMBASSADORS</span></a></div></div></div><style type="text/css">.background-image-6123bf3cd52cd {background-image: url(https://www.rubiks.com/media/wysiwyg/Ambassador-Landscape-Thumbnail-dekstop.jpeg);}@media only screen and (max-width: 768px) {.background-image-6123bf3cd52cd {background-image: url(https://www.rubiks.com/media/wysiwyg/Ambassador-Landscape-Thumbnail-mob---NO-LOGO.jpeg);}}</style></div><div data-content-type="row" data-appearance="contained" data-element="main"><div class="margin-b-0" data-enable-parallax="0" data-parallax-speed="0.5" data-background-images="{}" data-element="inner" style="justify-content: flex-start; display: flex; flex-direction: column; background-position: left top; background-size: cover; background-repeat: no-repeat; background-attachment: scroll; border-style: none; border-width: 1px; border-radius: 0px; margin: 0px 0px 30px; padding: 0px 15px;"><div class="pagebuilder-column-group" style="display: flex;" data-content-type="column-group" data-grid-size="12" data-element="main"><div class="pagebuilder-column box-shadow-block background-image-6123bf3cd5406" data-content-type="column" data-appearance="full-height" data-background-images='{\"desktop_image\":\"https://www.rubiks.com/media/wysiwyg/about-rubiks-hp_3.jpg\",\"mobile_image\":\"https://www.rubiks.com/media/wysiwyg/about-rubiks-mobv9_3.jpg\"}' data-element="main" style="justify-content: flex-end; display: flex; flex-direction: column; background-position: left top; background-size: cover; background-repeat: no-repeat; background-attachment: scroll; text-align: center; border-style: none; border-width: 1px; border-radius: 9px; min-height: 345px; width: calc(66.6667% - 30px); margin: 0px 15px 30px; padding: 0px 0px 10px; align-self: stretch;"><div data-content-type="buttons" data-appearance="inline" data-same-width="false" data-element="main" class="block-button" style="border-style: none; border-width: 1px; border-radius: 0px; margin: 0px; padding: 10px 10px 0px;"><div class="block-button" data-content-type="button-item" data-appearance="default" data-element="main" style="display: inline-block;"><a class="pagebuilder-button-primary" href="https://www.rubiks.com/en-us/about" target="_blank" data-link-type="default" data-element="link" style="text-align: center;"><span data-element="link_text">EXPLORE</span></a></div></div></div><div class="pagebuilder-column box-shadow-block background-image-6123bf3cd547e" data-content-type="column" data-appearance="full-height" data-background-images='{\"desktop_image\":\"https://www.rubiks.com/media/wysiwyg/untitled_5.jpg\"}' data-element="main" style="justify-content: flex-end; display: flex; flex-direction: column; background-position: left top; background-size: cover; background-repeat: no-repeat; background-attachment: scroll; text-align: center; border-style: none; border-width: 1px; border-radius: 9px; min-height: 345px; width: calc(33.3333% - 30px); margin: 0px 15px 30px; padding: 0px 0px 10px; align-self: stretch;"><div data-content-type="buttons" data-appearance="inline" data-same-width="false" data-element="main" style="text-align: center; border-style: none; border-width: 1px; border-radius: 0px; margin: 0px; padding: 10px 10px 0px;"><div class="block-button" data-content-type="button-item" data-appearance="default" data-element="main" style="display: inline-block;"><a class="pagebuilder-button-primary" href="https://www.rubiks.com/en-us/blog" target="" data-link-type="default" data-element="link" style="text-align: right;"><span data-element="link_text">EXPLORE</span></a></div></div></div><style type="text/css">.background-image-6123bf3cd5406 {background-image: url(https://www.rubiks.com/media/wysiwyg/about-rubiks-hp_3.jpg);}@media only screen and (max-width: 768px) {.background-image-6123bf3cd5406 {background-image: url(https://www.rubiks.com/media/wysiwyg/about-rubiks-mobv9_3.jpg);}}</style><style type="text/css">.background-image-6123bf3cd547e {background-image: url(https://www.rubiks.com/media/wysiwyg/untitled_5.jpg);}</style></div></div></div></div></div></main><footer class="page-footer"><div class="footer">
+    <div class="top-footer">
+        <div class="footer-newsletter">
+            
+
+<div class="block newsletter">
+        <div class="title">Stay in the know</div>
+    <div class="subtitle">Sign up for all <b>the buzz</b> and <b>exclusive offers.</b></div>
+        <form class="form subscribe"
+          action="https://www.rubiks.com/en-us/newsletter/subscriber/new/"
+          method="post"
+          data-mage-init='{"validation": {"errorClass": "mage-error"}}'
+          id="newsletter-validate-detail">
+        <div class="field newsletter">
+            <div class="control">
+                <input class="first" id="firstname" name="firstname" type="text"
+                       placeholder="First&#x20;Name" data-validate="{required:true}"/>
+            </div>
+            <div class="control">
+                <input id="lastname" name="lastname" type="text"
+                       placeholder="Last&#x20;Name" data-validate="{required:true}"/>
+            </div>
+            <div class="control">
+                <input class="last" name="email" type="email" id="newsletter"
+                       placeholder="Email&#x20;Address"
+                       data-validate="{required:true, 'validate-email':true}"/>
+            </div>
+        </div>
+        <div class="actions">
+            <button class="action subscribe" title="Subscribe" type="submit"
+                    disabled
+                    id="subscribe">
+                <span>subscribe</span>
+            </button>
+        </div>
+    </form>
+         <div data-element="main" data-content-type="row" data-appearance="contained"><div data-element="inner" class="" style="border-width: 1px; display: flex; border-style: none; border-radius: 0px; flex-direction: column;"><div data-element="main" data-content-type="text" data-appearance="default" class="text" style="text-align: center; border-width: 1px; border-style: none; border-radius: 0px; margin-bottom: 15px;"><p>By filling out this form and clicking subscribe,</p>
+<p>you agree to our<a href="https://www.rubiks.com/en-us/privacy-and-cookie-policy" target="_blank"> privacy policy</a>.</p></div></div></div>    </div>
+
+<div id='custom-popup-subscribe' style='display:block'>
+    <div id="success" style="display:none;">
+        <img src="https://www.rubiks.com/static/version1607342405/frontend/Bestresponse/rubiks/en_GB/images/success_rubiks_popup.png" alt="logo" />
+        <h1 class="title">You Solver.</h1>
+        <p class="message"></p>
+    </div>
+    <div id="error" style="display:none;">
+        <img src="https://www.rubiks.com/static/version1607342405/frontend/Bestresponse/rubiks/en_GB/images/error_rubiks_popup.png" alt="logo" />
+        <h1 class="title">You scrambler.</h1>
+        <p class="message"></p>
+    </div>
+
+</div>
+<script>
+    require(
+        [
+            'jquery',
+            'Magento_Ui/js/modal/modal',
+            'mage/mage'
+        ],
+        function (
+            $,
+            modal
+        ) {
+            $(document).ready(function () {
+                $('#subscribe').removeAttr("disabled");
+                //modal part
+                var options = {
+                    type: 'popup',
+                    responsive: true,
+                    innerScroll: true,
+                    modalClass: 'custom-popup-subscribe'
+                };
+                var popup = modal(options, $('#custom-popup-subscribe'));
+
+                var dataForm = $('#newsletter-validate-detail');
+                dataForm.mage('validation', {});
+                $(document).on('click', '#subscribe', function (e) {
+                    e.preventDefault();
+                    var status = dataForm.validation('isValid');
+                    var email = $('#newsletter').val();
+                    var url = dataForm.attr('action');
+                    if (status) {
+                        $.ajax({
+                            showLoader: true,
+                            url: url,
+                            data: {email: email},
+                            type: 'POST',
+                            dataType: 'json'
+                        }).done(function (data) {
+                            if (data.status == 'OK') {
+                                $('#error').hide();
+                                $('#success').show();
+                                $('#success .message').html('Your information completed the cube. </br>You are now subscribed.');
+                                $('.modal-footer button span').html('Continue');
+                            } else if (data.status == 'ERROR') {
+                                $('#success').hide();
+                                $('#error').show();
+                                $('#error .message').html('Something is amiss. </br>Please re-enter your information.');
+                                $('.modal-footer button').addClass('error');
+                                $('.modal-footer button span').html('retry');
+                            }
+
+                            $('#custom-popup-subscribe').modal('openModal');
+                            return true;
+                        });
+                    }
+                });
+            });
+        });
+</script>
+        </div>
+    </div>
+
+	<div class="footer-content">
+		<div class="footer-row">
+            <div class="footer-col">
+                                <div data-content-type="row" data-appearance="contained" data-element="main"><div data-enable-parallax="0" data-parallax-speed="0.5" data-background-images="{}" data-element="inner" style="justify-content: flex-start; display: flex; flex-direction: column; background-position: left top; background-size: cover; background-repeat: no-repeat; background-attachment: scroll; border-style: none; border-width: 1px; border-radius: 0px; margin: 0px 0px 10px; padding: 10px;"><div data-content-type="html" data-appearance="default" data-element="main" style="border-style: none; border-width: 1px; border-radius: 0px; margin: 0px; padding: 0px;" data-decoded="true"><!---<div class="ul">
+<div class="h3">Shop Information</div>
+<ul>
+<li><a title="#" href="https://www.rubiks.com/en-us/returns-policy">Returns</a></li>
+<li><a title="#" href="https://www.rubiks.com/en-us/shipping-rates">Shipping</a></li>
+<li><a title="#" href="https://www.rubiks.com/en-us/contact">Customer Service</a></li>
+</ul>
+</div>--->
+<div class="ul">
+<div class="h3"><a title="Contact Us" href="https://www.rubiks.com/en-us/contact">Contact Us</a></div>
+<ul><!---<li><a title="#" href="https://www.rubiks.com/en-us/contact">Customer Services</a></li>
+<li><a title="#" href="https://www.rubiks.com/en-us/contact">Usage Rights</a></li>
+<li><a title="#" href="https://www.rubiks.com/en-us/contact">General Enquiries</a></li>---></ul>
+</div></div></div></div>            </div>
+            <div class="footer-col">
+                                <div data-content-type="row" data-appearance="contained" data-element="main"><div data-enable-parallax="0" data-parallax-speed="0.5" data-background-images="{}" data-element="inner" style="justify-content: flex-start; display: flex; flex-direction: column; background-position: left top; background-size: cover; background-repeat: no-repeat; background-attachment: scroll; border-style: none; border-width: 1px; border-radius: 0px; margin: 0px 0px 10px; padding: 10px;"><div data-content-type="html" data-appearance="default" data-element="main" style="border-style: none; border-width: 1px; border-radius: 0px; margin: 0px; padding: 0px;" data-decoded="true"><div class="ul">
+<div class="h3">Company Information</div>
+<ul>
+<li><a title="#" href="https://www.rubiks.com/en-us/distributors/">Distributors</a></li>
+<li><a title="Ambassadors" href="https://www.rubiks.com/en-us/ambassadors" target="_self">Ambassadors</a></li>
+<li><a title="#" href="https://www.rubiks.com/en-us/promotional-cubes/">Promotional Cubes</a></li>
+<!--<li><a title="#" href="#">Site Map</a></li>--></ul>
+</div></div></div></div>            </div>
+            <div class="footer-col">
+                <div class="ul">
+                                        <div class="ul"><span class="h3">Legal information</span>
+<ul>
+<li><a title="#" href="https://www.rubiks.com/en-us/privacy-and-cookie-policy">Privacy &amp; Cookie policy</a></li>
+<li><a title="#" href="https://www.rubiks.com/en-us/terms-and-conditions">Terms &amp; Conditions</a></li>
+<li><a title="#" href="https://www.rubiks.com/en-us/image-rights">Image Rights</a></li>
+<li><a title="#" href="https://www.rubiks.com/en-us/usage-rights">Usage Rights FAQ</a></li>
+</ul>
+</div>                </div>
+            </div>
+            <div class="footer-col">
+                <div class="footer-social-media">
+                    <div class="ul">
+                        <span class="h3 not-mobile">Follow us</span>
+                        <ul>
+                            <li><a href="https://www.facebook.com/RubiksOfficial" target="_blank"><span class="ico-facebook"></span></a></li>
+                            <li><a href="https://twitter.com/rubiks_official" target="_blank"><span class="ico-twitter"></span></a></li>
+                            <li><a href="https://www.instagram.com/rubiks_official/" target="_blank"><span class="ico-instagram"></span></a></li>
+                            <li><a href="https://www.youtube.com/user/RubiksTV" title="RubiksTV" target="_blank"><span class="ico-youtube"></span></a></li>
+                            <li>
+                                <a href="https://www.tiktok.com/@rubiksofficial" target="_blank">
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="-32 0 512 512">
+                                        <path d="M432.734 112.465c-53.742 0-97.464-43.723-97.464-97.465 0-8.285-6.715-15-15-15h-80.336c-8.282 0-15 6.715-15 15v329.367c0 31.594-25.707 57.297-57.301 57.297s-57.297-25.703-57.297-57.297c0-31.597 25.703-57.3 57.297-57.3 8.285 0 15-6.715 15-15V191.73c0-8.28-6.715-15-15-15C75.199 176.73 0 251.934 0 344.367 0 436.801 75.2 512 167.633 512S335.27 436.8 335.27 344.367V198.574c29.851 15.918 63.074 24.227 97.464 24.227 8.286 0 15-6.715 15-15v-80.336c0-8.281-6.714-15-15-15zm0 0"/>
+                                    </svg>  
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="footer-currancy">
+                    <span class="h3 not-mobile">Store location</span>
+                    <p>You are currently browsing the store</p>
+                        <div class="form-language">
+        <select id="select-language" title="Your&#x20;Language"
+                onchange="window.location.href=this.value" class="flags">
+                                                            <option value="https://www.rubiks.com/en-uk/how-to-solve-2x2-rubiks-cube?___store=default&amp;___from_store=USA"
+                        class="flagbase">
+                    United Kingdom                </option>
+                                                            <option value="https://www.rubiks.com/fr-fr/how-to-solve-2x2-rubiks-cube?___store=FR&amp;___from_store=USA"
+                        class="flagfrench_website">
+                    France                </option>
+                                                            <option value="https://www.rubiks.com/en-us/how-to-solve-2x2-rubiks-cube?___store=USA&amp;___from_store=USA"
+                        class="flagUSA" selected="selected">
+                    North America                </option>
+                                                            <option value="https://www.rubiks.com/en-eu/how-to-solve-2x2-rubiks-cube?___store=EU&amp;___from_store=USA"
+                        class="flagEU">
+                     EU/Rest of World                </option>
+                    </select>
+    </div>
+
+                </div>
+            </div>
+        </div>
+	</div>
+</div>
+<address>Copyright &copy; 2021 Rubik's Brand Ltd. All Rights Reserved</address><a href="#" class="scrollToTop"><i class="fa fa-angle-up" aria-hidden="true"></i></a></footer><script type="text/x-magento-init">
+        {
+            "*": {
+                "Magento_Ui/js/core/app": {
+                    "components": {
+                        "storage-manager": {
+                            "component": "Magento_Catalog/js/storage-manager",
+                            "appendTo": "",
+                            "storagesConfiguration" : {"recently_viewed_product":{"requestConfig":{"syncUrl":"https:\/\/www.rubiks.com\/en-us\/catalog\/product\/frontend_action_synchronize\/"},"lifetime":"1000","allowToSendRequest":null},"recently_compared_product":{"requestConfig":{"syncUrl":"https:\/\/www.rubiks.com\/en-us\/catalog\/product\/frontend_action_synchronize\/"},"lifetime":"1000","allowToSendRequest":null},"product_data_storage":{"updateRequestConfig":{"url":"https:\/\/www.rubiks.com\/en-us\/rest\/USA\/V1\/products-render-info"},"allowToSendRequest":null}}                        }
+                    }
+                }
+            }
+        }
+</script>
+<script id="form-tmpl-multiple" type="text/x-magento-template">
+    <form id="wishlist-hidden-form" method="post" action="<%- data.url %>" class="no-display">
+        <% if (data.itemId) { %>
+            <input name="item_id" value="<%- data.itemId %>">
+        <% } %>
+        <% if (data.wishlistId) { %>
+            <input name="wishlist_id" value="<%- data.wishlistId %>">
+        <% } %>
+        <% if (data.qty) { %>
+            <input name="qty" value="<%- data.qty %>">
+        <% } %>
+        <% if (data.item) { %>
+            <input name="item" value="<%- data.item %>">
+        <% } %>
+        <% if (data.entity) { %>
+            <input name="entity" value="<%- data.entity %>">
+        <% } %>
+        <% if (data.form_key) { %>
+            <input name="form_key" value="<%- data.form_key %>">
+        <% } %>
+    </form>
+</script>
+<script id="popup-tmpl" type="text/x-magento-template">
+    <div class="window wishlist overlay active"></div>
+    <div id="<%- data.popupWishlistBlockId %>" class="window wishlist popup active">
+        <div class="popup-actions">
+            <div class="secondary">
+                <button type="button"
+                        title="<%- window.jQuery.mage.__('Close') %>"
+                        class="action close <%- data.btnCloseClass %>"
+                        data-dismiss="popup">
+                    <span><%- data.translate.close %></span>
+                </button>
+            </div>
+        </div>
+        <div class="popup-header">
+             <strong class="title" id="popup-title">
+                 <span>
+                     <% if (data.isEdit) { %>
+                        <%- data.translate.editWishlist %>
+                     <% } else { %>
+                        <%- data.translate.createNewWishlist %>
+                     <% } %>
+                 </span>
+             </strong>
+        </div>
+        <div class="popup-content" id="popup-content">
+            <form id="<%- data.popupWishlistFormId %>" method="post" action="<%- data.url %>" class="form wishlist">
+                <input name="form_key" type="hidden" value="<%- data.formKey %>">
+                <fieldset class="fieldset">
+                    <div class="field name">
+                        <label for="wishlist-name" class="label">
+                            <span><%- data.translate.wishListName %></span>
+                        </label>
+                        <div class="control">
+                            <input id="wishlist-name"
+                                   class="input-text"
+                                   data-role="prompt-field"
+                                   data-validate="{required:true}"
+                                   type="text"
+                                   name="name"
+                                   maxlength="255"
+                                   value="<%- data.name %>">
+                        </div>
+                    </div>
+                    <div class="field choice">
+                        <input id="wishlist-public"
+                               type="checkbox"
+                               name="visibility"<% if (data.isPublic) { %> checked=true<% } %>">
+                        <label for="wishlist-public" class="label">
+                            <span><%- data.translate.publicWishList %></span>
+                        </label>
+                    </div>
+                    <div class="actions-toolbar">
+                        <div class="primary">
+                            <button class="action save primary" type="submit" title="<%- window.jQuery.mage.__('Save') %>">
+                                <span><%- data.translate.save %></span>
+                            </button>
+                        </div>
+                        <div class="secondary">
+                            <button class="action cancel <%- data.btnCloseClass %>" type="button" title="<%- window.jQuery.mage.__('Cancel') %>">
+                                <span><%- data.translate.cancel %></span>
+                            </button>
+                        </div>
+                    </div>
+                </fieldset>
+            </form>
+        </div>
+    </div>
+</script>
+<script id="split-btn-tmpl" type="text/x-magento-template">
+    <div class="split button wishlist">
+        <button type="button" data-post='<%- JSON.stringify(data.generalParams) %>' data-action="add-to-wishlist" class="label action split">
+            <span><%- data.buttonName %></span>
+        </button>
+        <button class="action toggle change"
+                title="<%- window.jQuery.mage.__('Add to:') %>"
+                type="button"
+                data-mage-init='{"dropdown":{}}'
+                data-toggle="dropdown"
+                data-trigger-keypress-button="true">
+            <span><%- window.jQuery.mage.__('Add to:') %></span>
+        </button>
+        <ul class="items" data-target="dropdown">
+            <% _.each(data.wishlists, function(item) { %>
+                <li class="item">
+                    <% if (item.newClass) { %>
+                        <span role="button"
+                              tabindex="0"
+                              class="action <%- item.newClass %>"
+                              data-action-keypress="true"
+                              data-post-new-wishlist='<%- JSON.stringify(item.params) %>'
+                              data-action="add-to-wishlist"
+                              title="<%- item.name %>">
+                            <span><%- item.name %></span>
+                        </span>
+                    <% } else { %>
+                        <span role="button"
+                              tabindex="0"
+                              data-action-keypress="true"
+                              data-post='<%- JSON.stringify(item.params) %>'
+                              data-action="add-to-wishlist"
+                              title="<%- item.name %>">
+                            <%- item.name %>
+                        </span>
+                    <% } %>
+                </li>
+            <% }); %>
+        </ul>
+    </div>
+</script>
+<script type="text/x-magento-init">
+    {
+        "*": {
+            "Magento_Ui/js/core/app": {
+                "components": {
+                    "multipleWishlist": {
+                        "component": "Magento_MultipleWishlist/js/view/multiple-wishlist",
+                        "config": {
+                            "multipleWishlistOptions": {
+                                "createUrl": "https://www.rubiks.com/en-us/wishlist/index/createwishlist/",
+                                "wishlistLink": ".action.towishlist"
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+</script>
+
+
+<script>
+var dfUrl = '//cdn.doofinder.com/media/js/doofinder-classic.7.latest.min.js';
+(function(c,o,k,e){var r,t,i=setInterval(function(){t+=c;r=typeof(require)==='function';
+if(t>=o||r)clearInterval(i);if(r)require([k],e)},c)})(100, 10000, dfUrl, function(doofinder){
+doofinder.classic.setLayers([{
+  "hashid": "428abcc37d8ae2309c3f7e2855bdbf50",
+  "zone": "eu1",
+  "display": {
+    "lang": "en"
+  },
+  "queryInput": "#search"
+}]);
+});
+</script><script type="text/javascript">(function(el){ el && el.removeAttribute('data-mage-init'); })(document.getElementById('search'));</script>
+    <script type="text/x-magento-init">
+    {
+        "*": {
+            "Dotdigitalgroup_Email/js/emailCapture":{
+                "type":"newsletter",
+                "url":"https://www.rubiks.com/en-us/connector/ajax/emailcapture/"
+            }
+        }
+    }
+    </script>
+<script type="text/x-magento-init" id="hiconversion_dynamic">
+{
+    "*": {
+        "Hic_Integration/js/dynamic": {}
+    }
+}
+</script>
+
+<!-- BEGIN GTAG HOMEPAGE TAG -->
+<!-- END GTAG HOMEPAGE TAG -->
+</div>    <script type="text/javascript">window.NREUM||(NREUM={});NREUM.info={"beacon":"bam-cell.nr-data.net","licenseKey":"696e8ca155","applicationID":"251331098","transactionName":"YwRVNkEFDxcCAkdbWlpOdgFHDQ4KTAJeQRpdD1MHS0sICgcESw==","queueTime":0,"applicationTime":845,"atts":"T0NWQAkfHBk=","errorBeacon":"bam-cell.nr-data.net","agent":""}</script></body>
+</html>
